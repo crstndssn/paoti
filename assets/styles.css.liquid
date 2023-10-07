@@ -160,6 +160,8 @@
 {% else %}
 {% assign head_txt_col_hover = head_txt_col %}
 {% endif %}
+
+
 /* Component variables */
 body.cc-popup-no-scroll {
   overflow: hidden;
@@ -928,7 +930,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
   padding: 0;
-  border: 0;
   font: inherit;
   vertical-align: baseline;
 }
@@ -2316,7 +2317,6 @@ input[type=submit],
 input[type=reset],
 input[type=button] {
   background: {{ btn_col }};
-  border: 1.5px solid {{ btn_col }};
   color: {{ btn_col_txt }};
   font-size: {{ button_text_size | round }}px;
   font-family: inherit;

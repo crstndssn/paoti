@@ -1,0 +1,104 @@
+<div class="min-h-screen container mx-auto">
+  {% comment %} {{ section.settings.collection__carrousel }} {% endcomment %}
+
+  {% assign collection__name = collections[section.settings.collection__carrousel].products %}
+
+  {% capture collection__name %}
+  {% for item in collection__name %}
+    {{ item.type }},
+  {% endfor %}
+  {% endcapture %}
+
+  <div class="flex justify-center items-center mt-12">
+    {% assign collection__no-repeat = collection__name | split: ',' | uniq %}
+    {% for item in collection__no-repeat %}
+      <button
+        class="text-lg border-b-2 border-gray-300 bg-white text-black rounded-none capitalize hover:bg-white"
+        onclick="openCity({{ item }})"
+      >
+        {{ item }}
+      </button>
+    {% endfor %}
+  </div>
+
+  <div class="w-full flex justify-center items-center">
+    <button
+      class="text-lg border-b-2 border-black bg-white text-black rounded-none"
+      onclick="openCity('Handbags')"
+    >
+      Handbags
+    </button>
+    <button class="text-lg" onclick="openCity('Straps')">Straps</button>
+    <button class="text-lg" onclick="openCity('Straps')">Swimwear</button>
+    <button class="text-lg" onclick="openCity('Handbags')">Resort</button>
+  </div>
+
+  <div id="Handbags" class="w3-container city swiper-carrousel">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+    </div>
+  </div>
+
+  <div id="Mini Handbags" class="w3-container city" style="display:none">
+    <h2>Mini Handbags</h2>
+    <p>Paris is the capital of France.</p>
+  </div>
+
+  <div id="Swimwear" class="w3-container city" style="display:none">
+    <h2>Swimwear</h2>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+
+  <div id="Resort" class="w3-container city" style="display:none">
+    <h2>Resort</h2>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+</div>
+
+<script>
+  function openCity(cityName) {
+    var i;
+    var x = document.getElementsByClassName('city');
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = 'none';
+    }
+    document.getElementById(cityName).style.display = 'block';
+  }
+</script>
+
+{% schema %}
+{
+  "name": "Category Carrousel",
+  "settings": [
+    {
+      "type": "collection",
+      "id": "collection__carrousel",
+      "label": "Select a colletion"
+    }
+  ]
+}
+{% endschema %}
+
+{% style %}
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+{% endstyle %}
