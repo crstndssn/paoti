@@ -110,6 +110,12 @@
 
       }
     },
+    "looks": {
+      "type": "looks",
+      "settings": {
+
+      }
+    },
     "9670c65d-bc0e-4a50-8dd5-60f8e0f02b33": {
       "type": "product-list",
       "disabled": true,
@@ -608,6 +614,7 @@
     "16359285201c71bbb1",
     "e7a34445-c4cb-4e57-8667-61323eba44a5",
     "categories",
+    "looks",
     "9670c65d-bc0e-4a50-8dd5-60f8e0f02b33",
     "8361c1c6-0b9a-43dc-8fc3-e7549563a654",
     "1635927863703110df",

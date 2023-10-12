@@ -1,0 +1,14 @@
+/* estilos perzonalizados */
+
+* {
+  text-decoration-color: #000 !important;
+}
+
+button:hover {
+  background: transparent !important;
+  border-bottom: rgb(27, 27, 27) 2px solid !important;
+}
+
+.product-title {
+  margin-bottom: 5px;
+}
