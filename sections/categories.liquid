@@ -1,49 +1,38 @@
 <div class="container mx-auto py-10">
+  {% comment %} GET COLLECTION {% endcomment %}
   {% assign collection__name = collections[section.settings.collection__carrousel].products %}
 
   {% capture collection__name %}
   {% for item in collection__name %}
-    {{ item.type }},
+    {{ item.metafields.custom.collection }},
   {% endfor %}
   {% endcapture %}
 
-  {% comment %}
-    <div class="flex justify-center items-center mt-12">
-      {% assign collection__no-repeat = collection__name | split: ',' | uniq %}
-      {% for item in collection__no-repeat %}
-        <button
-          class="text-lg border-b-2 border-gray-300 bg-white text-black rounded-none capitalize hover:bg-white"
-          onclick="openCity({{ item }})"
-        >
-          {{ item }}
-        </button>
-      {% endfor %}
-    </div>
-  {% endcomment %}
-
-  <div class="w-full flex justify-center items-center">
-    <button
-      class="text-xl border-b-2 border-gray-300 bg-white text-black rounded-none capitalize mx-7 px-2 hover"
-      onclick="openCity('Handbags')"
-    >
-      Handbags
-    </button>
-    <button
-      class="text-xl border-b-2 border-gray-300 bg-white text-black rounded-none capitalize mx-7 px-2"
-      onclick="openCity('Mini-Handbags')"
-    >
-      Mini-Handbags
-    </button>
-    <button
-      class="text-xl border-b-2 border-gray-300 bg-white text-black rounded-none capitalize mx-7 px-2"
-      onclick="openCity('Swimwear')"
-    >
-      Swimwear
-    </button>
-    {% comment %} <button class="text-lg" onclick="openCity('Resort')">Resort</button> {% endcomment %}
+  <div class="flex justify-center items-center mt-0 mb-10 [&>*:last-child]:hidden">
+    {% assign collection__no-repeat = collection__name | split: ',' | uniq %}
+    {% for item in collection__no-repeat %}
+      <button
+        class="text-lg border-b-2 mx-7 border-gray-300 bg-white text-black rounded-none capitalize hover:bg-white"
+        onclick="openCity({{ item }})"
+      >
+        {{ item }}
+      </button>
+    {% endfor %}
   </div>
 
-  <div id="Handbags">
+  <div class="grid grid-cols-5 gap-8">
+    {% for item in collections[section.settings.collection__carrousel].products %}
+      {% render 'product-block',
+        product: item,
+        manual_image_load: section.settings.enable_carousel,
+        custom_aspect_ratio: chosen_aspect_ratio,
+        no_swiping: section.settings.enable_carousel,
+        no_quick_buy_markup: section.settings.enable_carousel
+      %}
+    {% endfor %}
+  </div>
+
+  <div class="hidden" id="Handbags">
     <div class="swiper mySwiper h-24">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">

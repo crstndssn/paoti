@@ -1,30 +1,47 @@
-{% for block in section.blocks %}
-  <div class="container mx-auto py-10" style="background: {{ block.settings.background__color }}">
-    <h2 class="text-center pb-7 text-2xl">{{ section.settings.section__title }}</h2>
-    <div class="grid grid-cols-4 justify-center gap-6 px-20">
-      <div class="col-span-1 flex justify-start items-start flex-col">
-        <div class="w-full bg-white h-fit p-4 pb-0">
-          {% render 'product-block', product: block.settings.first__product %}
-        </div>
+<div class="swiper carousel-looks">
+  <div class="swiper-wrapper">
+    {% for block in section.blocks %}
+      <div class="swiper-slide container mx-auto py-10" style="background: {{ block.settings.background__color }}">
+        <h2 class="text-center pb-7 text-2xl">{{ section.settings.section__title }}</h2>
+        <div class="grid grid-cols-4 justify-center gap-6 px-20">
+          <div class="col-span-1 flex justify-start items-start flex-col">
+            <div class="w-full bg-white h-fit p-4 pb-0">
+              {% render 'product-block', product: block.settings.first__product %}
+            </div>
 
-        <div class="w-full flex justify-center items-center flex-col mt-5">
-          <a class="bg-black text-white px-8 py-3 mb-2" href="#">Shop the look</a>
-          <a class="decoration-black text-black underline" href="#">Discover lookbook</a>
+            <div class="w-full flex justify-center items-center flex-col mt-5">
+              <a class="bg-black text-white px-8 py-3 mb-2" href="#">Shop the look</a>
+              <a class="decoration-black text-black underline" href="#">Discover lookbook</a>
+            </div>
+          </div>
+
+          <div class="col-span-2">
+            <img class="w-full" src="{{ block.settings.look__image | img_url: 'master' }}">
+          </div>
+
+          <div class="col-span-1 flex items-end">
+            <div class="w-full bg-white h-fit p-4 pb-0">
+              {% render 'product-block', product: block.settings.second__product %}
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="col-span-2">
-        <img class="w-full" src="{{ block.settings.look__image | img_url: 'master' }}">
-      </div>
-
-      <div class="col-span-1 flex items-end">
-        <div class="w-full bg-white h-fit p-4 pb-0">
-          {% render 'product-block', product: block.settings.second__product %}
-        </div>
-      </div>
-    </div>
+    {% endfor %}
   </div>
-{% endfor %}
+  <div class="swiper-button-prev text-black"></div>
+  <div class="swiper-button-next text-black"></div>
+</div>
+
+<script>
+  var swiper = new Swiper('.carousel-looks', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
 
 {% schema %}
 {
@@ -67,3 +84,10 @@
   ]
 }
 {% endschema %}
+
+{% style %}
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+{% endstyle %}

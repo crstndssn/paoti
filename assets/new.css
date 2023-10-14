@@ -12,3 +12,7 @@ button:hover {
 .product-title {
   margin-bottom: 5px;
 }
+
+.product-block__price a:nth-child(2) {
+  border: solid 1px green;
+}
