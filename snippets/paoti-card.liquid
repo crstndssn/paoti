@@ -1,0 +1,14 @@
+<div class="w-full h-fit">
+  <img class="mb-2" src="{{ product.images[2] | img_url: 'master' }}">
+
+  <p class="mb-1 font-medium text-md">{{ product.title }}</p>
+
+  <p class="mb-2 text-[#7A7A7A]">{{ product.price | money_with_currency }}</p>
+
+  <div class="product-block__price mb-3">
+    <a class="w-fit border border-black text-sm flex justify-start items-center rounded-full px-3 py-[3px]"
+      >ADD <img class="ml-2 w-[14px] h-[14px] mb-[1px]" src="{{ 'add.svg' | asset_url }}"
+    ></a>
+    {% comment %} <a class="w-fit text-sm"><img class=" w-[18px] h-[1px] mb-[1px]" src="{{ 'add.svg' | asset_url }}"></a> {% endcomment %}
+  </div>
+</div>

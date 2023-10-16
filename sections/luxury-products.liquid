@@ -1,0 +1,64 @@
+<div class="flex flex-col md:flex-row w-full mt-10">
+  <div class="w-full md:w-1/2 relative">
+    <img class="object-cover h-[70vh] w-full" src="{{ section.settings.luxury__image | img_url: 'master' }}">
+    <h2 class="luxury__title text-[54px] ml-4 mb-2 md:mb-5 md:ml-10 absolute bottom-0 text-white">
+      {{ section.settings.luxury__title }}
+    </h2>
+  </div>
+  <div class="w-full md:w-1/2 py-14 md:py-0 md:h-[70vh] flex justify-center items-center bg-[#F9F9F9]">
+    <div class="swiper-wrapper luxury-products swiper-wrapper__luxury-products mx-4 gap-3 md:ml-10 grid grid-cols-2">
+      {% for block in section.blocks %}
+        <div class="w-full bg-white text-black h-fit p-3 md:p-4 pb-0">
+          {% comment %} {% render 'product-block', product: block.settings.luxury__product %} {% endcomment %}
+
+          {% render 'paoti-card', product: block.settings.luxury__product %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<script>
+  {% comment %} var swiper = new Swiper('.luxury-products', {
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  }); {% endcomment %}
+</script>
+
+{% schema %}
+{
+  "name": "Luxury Products",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "luxury__title",
+      "label": "Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "luxury__image",
+      "label": "Main image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Select your products",
+      "settings": [
+        {
+          "type": "product",
+          "id": "luxury__product",
+          "label": "Add Product"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

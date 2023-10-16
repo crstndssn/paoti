@@ -105,7 +105,7 @@
       }
     },
     "categories": {
-      "type": "categories",
+      "type": "categories-paoti",
       "settings": {
         "collection__carrousel": "carousel"
       }
@@ -140,22 +140,6 @@
         "section__title": "Paoti's Outfits"
       }
     },
-    "9670c65d-bc0e-4a50-8dd5-60f8e0f02b33": {
-      "type": "product-list",
-      "disabled": true,
-      "settings": {
-        "title": "Featured Handbags",
-        "available_countries": "CO",
-        "product_list": [
-
-        ],
-        "show_vendor": false,
-        "enable_carousel": false,
-        "grid": 4,
-        "use_alt_bg": false,
-        "full_width": false
-      }
-    },
     "8361c1c6-0b9a-43dc-8fc3-e7549563a654": {
       "type": "product-list",
       "settings": {
@@ -174,462 +158,29 @@
         "full_width": false
       }
     },
-    "1635927863703110df": {
-      "type": "rich-text",
+    "luxury-products": {
+      "type": "luxury-products",
       "blocks": {
-        "1635927863703110df-1": {
-          "type": "heading",
+        "e6c10361-a541-41ab-88aa-59d7ae63cfd5": {
+          "type": "item",
           "settings": {
-            "title": "Unique Luxury Handbags",
-            "use_h1": true
+            "luxury__product": "anita"
           }
         },
-        "1635927863703110df-2": {
-          "type": "text",
+        "af06ee7d-de19-413c-a3ce-87e6579181dd": {
+          "type": "item",
           "settings": {
-            "text": "<p>Each of our bags is truly <strong>one-of-a-kind<\/strong>, with only one model in existence. Crafting each bag takes a full team approximately two weeks of dedicated work<\/p>",
-            "enlarge_text": true
-          }
-        },
-        "75ea7b9b-229c-4372-98d9-da0a493537c6": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Browse our collections"
+            "luxury__product": "eilleen"
           }
         }
       },
       "block_order": [
-        "1635927863703110df-1",
-        "1635927863703110df-2",
-        "75ea7b9b-229c-4372-98d9-da0a493537c6"
-      ],
-      "custom_css": [
-        "p {font-size: 15px; color: #7a7a7a;}",
-        "p strong {color: #000000; font-weight: 500;}",
-        "h1 {font-size: 24px;}",
-        ".subheading--over {font-size: 15px; text-transform: capitalize;}"
+        "e6c10361-a541-41ab-88aa-59d7ae63cfd5",
+        "af06ee7d-de19-413c-a3ce-87e6579181dd"
       ],
       "settings": {
-        "height": "small",
-        "text_alignment": "center",
-        "full_width": false,
-        "use_alt_bg": false
-      }
-    },
-    "d29be764-5332-4dc5-b57c-9eaae442a1d6": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "title": "Featured collection",
-        "collection": "unique-handbags",
-        "show_vendor": false,
-        "enable_carousel": true,
-        "grid": 4,
-        "rows": 1,
-        "use_alt_bg": false,
-        "show_view_all": true,
-        "full_width": true
-      }
-    },
-    "05bf3aeb-0172-43bd-9217-a489411b663a": {
-      "type": "collection-list",
-      "blocks": {
-        "a224bafb-6e28-428e-9cfb-b59777b54d39": {
-          "type": "collection",
-          "settings": {
-            "collection": "the-chelsea-ivory"
-          }
-        },
-        "f5b2d346-751b-406d-9ea9-b28021bc756c": {
-          "type": "collection",
-          "settings": {
-            "collection": "deep-blue"
-          }
-        },
-        "9e7a152b-81e3-4ef7-9b22-deedc775e8fc": {
-          "type": "collection",
-          "settings": {
-            "collection": "neon-valley"
-          }
-        },
-        "bc697516-26f6-4ed0-b81d-b6e5d51b2fd6": {
-          "type": "collection",
-          "settings": {
-            "collection": "paoti-in-color"
-          }
-        },
-        "a30d3b92-687f-49b7-ba9e-db998e10fdb0": {
-          "type": "collection",
-          "settings": {
-            "collection": "nativa"
-          }
-        },
-        "3eea3fdc-6b34-488a-9469-da28356940bb": {
-          "type": "collection",
-          "settings": {
-            "collection": "basics"
-          }
-        },
-        "bdb36b73-3c91-446c-a98c-12f14a682dc1": {
-          "type": "collection",
-          "settings": {
-            "collection": "pretty-in-rose"
-          }
-        }
-      },
-      "block_order": [
-        "a224bafb-6e28-428e-9cfb-b59777b54d39",
-        "f5b2d346-751b-406d-9ea9-b28021bc756c",
-        "9e7a152b-81e3-4ef7-9b22-deedc775e8fc",
-        "bc697516-26f6-4ed0-b81d-b6e5d51b2fd6",
-        "a30d3b92-687f-49b7-ba9e-db998e10fdb0",
-        "3eea3fdc-6b34-488a-9469-da28356940bb",
-        "bdb36b73-3c91-446c-a98c-12f14a682dc1"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "Browse Our Collections",
-        "enable_carousel": true,
-        "grid": 4,
-        "use_alt_bg": false,
-        "full_width": false
-      }
-    },
-    "eee4aff1-1145-4d26-a9b8-d6846aee2535": {
-      "type": "slideshow",
-      "blocks": {
-        "template--20209926603028__eee4aff1-1145-4d26-a9b8-d6846aee2535-image-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/nativa.png",
-            "mobile_image": "shopify:\/\/shop_images\/nativa-mobile.png",
-            "slide_link": "",
-            "subheading": "ENJOY OUR COLLECTIONS",
-            "title": "Nativa",
-            "heading_max_width": 800,
-            "title_size": 54,
-            "title_size_mobile": 54,
-            "use_h1": false,
-            "text": "",
-            "enlarge_text": false,
-            "button_label_1": "Shop Collection",
-            "button_url_1": "shopify:\/\/collections\/nativa",
-            "button_label_2": "",
-            "button_url_2": "",
-            "text_alignment": "center center"
-          }
-        },
-        "template--20209926603028__eee4aff1-1145-4d26-a9b8-d6846aee2535-image-2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/neon-valley.png",
-            "mobile_image": "shopify:\/\/shop_images\/neon-valley-mobile.png",
-            "slide_link": "",
-            "subheading": "ENJOY OUR COLLECTIONS",
-            "title": "Neon Valley",
-            "heading_max_width": 800,
-            "title_size": 54,
-            "title_size_mobile": 54,
-            "use_h1": false,
-            "text": "",
-            "enlarge_text": true,
-            "button_label_1": "Shop Collection",
-            "button_url_1": "shopify:\/\/collections\/neon-valley",
-            "button_label_2": "",
-            "button_url_2": "",
-            "text_alignment": "center center"
-          }
-        },
-        "1825567b-dd72-487e-8f6e-f37c6161a567": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/paoti-in-color.png",
-            "mobile_image": "shopify:\/\/shop_images\/paoti-in-color-mobile.png",
-            "slide_link": "",
-            "subheading": "ENJOY OUR COLLECTIONS",
-            "title": "Paoti in Color",
-            "heading_max_width": 800,
-            "title_size": 54,
-            "title_size_mobile": 54,
-            "use_h1": false,
-            "text": "",
-            "enlarge_text": true,
-            "button_label_1": "Shop Collection",
-            "button_url_1": "shopify:\/\/collections\/paoti-in-color",
-            "button_label_2": "",
-            "button_url_2": "",
-            "text_alignment": "center center"
-          }
-        },
-        "fa7439a7-1bee-4a3d-bee0-19be55e8fb4d": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/the-chelsea-ivory.png",
-            "mobile_image": "shopify:\/\/shop_images\/the-chelsea-ivory-mobile.png",
-            "slide_link": "",
-            "subheading": "ENJOY OUR COLLECTIONS",
-            "title": "The Chelsea Ivory",
-            "heading_max_width": 800,
-            "title_size": 54,
-            "title_size_mobile": 54,
-            "use_h1": false,
-            "text": "",
-            "enlarge_text": true,
-            "button_label_1": "Shop Collection",
-            "button_url_1": "shopify:\/\/collections\/the-chelsea-ivory",
-            "button_label_2": "",
-            "button_url_2": "",
-            "text_alignment": "center center"
-          }
-        }
-      },
-      "block_order": [
-        "template--20209926603028__eee4aff1-1145-4d26-a9b8-d6846aee2535-image-1",
-        "template--20209926603028__eee4aff1-1145-4d26-a9b8-d6846aee2535-image-2",
-        "1825567b-dd72-487e-8f6e-f37c6161a567",
-        "fa7439a7-1bee-4a3d-bee0-19be55e8fb4d"
-      ],
-      "custom_css": [
-        ".overlay-text__title {font-family: \"Cormorant\", sans-serif;}",
-        ".overlay-text__subheading {margin-bottom: 10px;}",
-        "a,a:hover {background-color: #f4f1ea; text-transform: none; margin-top: 0; padding-left: 40px; padding-right: 40px; color: #000000;}"
-      ],
-      "settings": {
-        "height": "adapt",
-        "height_desktop": 600,
-        "height_mobile": 460,
-        "full_width": true,
-        "mobile_overlay_under": false,
-        "overlay_style": "shadow",
-        "slide_transition": "fade",
-        "slide_navigation": "arrows",
-        "autoplay": true,
-        "autoplay_speed": 7
-      }
-    },
-    "60892a76-d073-4da2-b1c5-377391c807f5": {
-      "type": "product-list",
-      "disabled": true,
-      "settings": {
-        "title": "Straps",
-        "available_countries": "US",
-        "product_list": [
-          "sp83",
-          "sp81",
-          "sp82",
-          "sp80"
-        ],
-        "show_vendor": false,
-        "enable_carousel": false,
-        "grid": 4,
-        "use_alt_bg": false,
-        "full_width": false
-      }
-    },
-    "3d6edd85-be55-46b0-91e3-fd8a884a5ad5": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Straps",
-        "collection": "straps",
-        "show_vendor": false,
-        "enable_carousel": false,
-        "grid": 4,
-        "rows": 1,
-        "use_alt_bg": false,
-        "show_view_all": true,
-        "full_width": false
-      }
-    },
-    "16359278867b92de38": {
-      "type": "image-with-text",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/DANIELLE_1.png",
-        "image_width": 500,
-        "subheading": "Handmade Luxury",
-        "title": "Custom Unique Pieces",
-        "use_h1": false,
-        "text": "<p>Every single Paoti bag is handmade by master craftsmen and curated to perfection. It takes about 2 weeks of work to fully complete each bag. All pieces are truly unique, meaning , only 1 of each is ever made. <\/p>",
-        "button_label": "",
-        "button_link": "",
-        "button_style": "primary",
-        "image_position": "left",
-        "text_alignment": "left",
-        "use_alt_bg": false
-      }
-    },
-    "16359276425da8ce46": {
-      "type": "slideshow",
-      "blocks": {
-        "16359276425da8ce46-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Banner.png",
-            "mobile_image": "shopify:\/\/shop_images\/banner-mobile.png",
-            "slide_link": "",
-            "subheading": "",
-            "title": "",
-            "heading_max_width": 860,
-            "title_size": 44,
-            "title_size_mobile": 38,
-            "use_h1": false,
-            "text": "<p>Unique, <em>Just<\/em> Like <em>You<\/em><\/p>",
-            "enlarge_text": true,
-            "button_label_1": "Handbags",
-            "button_url_1": "shopify:\/\/collections\/unique-handbags",
-            "button_label_2": "Minibags",
-            "button_url_2": "shopify:\/\/collections\/mini-handbags",
-            "text_alignment": "bottom center"
-          }
-        }
-      },
-      "block_order": [
-        "16359276425da8ce46-0"
-      ],
-      "custom_css": [
-        ".overlay-text {background-color: rgba(0, 0, 0, 0.1);}",
-        ".overlay-text__rte p {font-size: 54px; font-family: \"Cormorant\", sans-serif;}",
-        "a {text-transform: none;}"
-      ],
-      "settings": {
-        "height": "adapt",
-        "height_desktop": 940,
-        "height_mobile": 360,
-        "full_width": true,
-        "mobile_overlay_under": false,
-        "overlay_style": "full image-overlay--bg-shadow",
-        "slide_transition": "zoom",
-        "slide_navigation": "dots",
-        "autoplay": true,
-        "autoplay_speed": 7
-      }
-    },
-    "a9671d86-1859-4b12-ac93-17440d05fb48": {
-      "type": "product-list",
-      "settings": {
-        "title": "Colors For Any Ocassion",
-        "available_countries": "US",
-        "product_list": [
-          "danielle",
-          "jame",
-          "arianna",
-          "corinne"
-        ],
-        "show_vendor": false,
-        "enable_carousel": false,
-        "grid": 4,
-        "use_alt_bg": false,
-        "full_width": false
-      }
-    },
-    "79692fda-a67b-4c94-a378-acc483261643": {
-      "type": "image-with-text-overlay",
-      "disabled": true,
-      "custom_css": [
-        ".overlay-text {background-color: rgba(0, 0, 0, 0.1);}"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/custom_resized_db2e75e9-4ff8-463b-97bc-8a2111efe7b0.jpg",
-        "height": "fixed",
-        "height_desktop": 780,
-        "height_mobile": 560,
-        "image_link": "shopify:\/\/collections\/nativa",
-        "subheading": "",
-        "title": "Nativa",
-        "heading_max_width": 800,
-        "title_size": 84,
-        "title_size_mobile": 38,
-        "use_h1": false,
-        "text": "",
-        "enlarge_text": true,
-        "button_label_1": "Shop Collection",
-        "button_url_1": "",
-        "button_label_2": "",
-        "button_url_2": "",
-        "text_alignment": "center center",
-        "full_width": true,
-        "mobile_overlay_under": false,
-        "overlay_style": "shadow"
-      }
-    },
-    "7ffa9d6f-e7fb-40da-aab2-9f4ae3b8d4f8": {
-      "type": "product-list",
-      "disabled": true,
-      "settings": {
-        "title": "For Any Occasion",
-        "available_countries": "CO",
-        "product_list": [
-          "felicita",
-          "hannia",
-          "milu",
-          "rebecca"
-        ],
-        "show_vendor": false,
-        "enable_carousel": false,
-        "grid": 4,
-        "use_alt_bg": false,
-        "full_width": false
-      }
-    },
-    "60a6248f-afa3-49e0-b617-cc5d6a3da995": {
-      "type": "background-video",
-      "disabled": true,
-      "settings": {
-        "video_shopify": "shopify:\/\/files\/videos\/C0004_6 (1).mp4",
-        "video_external": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "subheading": "Tell your story",
-        "title": "Background video",
-        "heading_max_width": 780,
-        "title_size": 42,
-        "title_size_mobile": 42,
-        "use_h1": false,
-        "text": "<p>Use a video to get a customer's attention<\/p>",
-        "enlarge_text": false,
-        "button_label_1": "",
-        "button_url_1": "",
-        "button_label_2": "",
-        "button_url_2": "",
-        "text_alignment": "center center",
-        "height_desktop": 480,
-        "height_mobile": 480,
-        "full_width": true,
-        "overlay_style": "no_background"
-      }
-    },
-    "16359278676808bea5": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "title": "Shop Our Deep Blue Collection",
-        "collection": "deep-blue",
-        "show_vendor": false,
-        "enable_carousel": false,
-        "grid": 4,
-        "rows": 1,
-        "use_alt_bg": false,
-        "show_view_all": true,
-        "full_width": false
-      }
-    },
-    "711e247f-16fb-4b1c-aa66-ca055e217df4": {
-      "type": "image-with-text",
-      "custom_css": [
-        ".align-left a {background-color: #000; text-transform: none;}",
-        "p {color: #7a7a7a;}",
-        "div {color: #7a7a7a;}"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/our-values.png",
-        "image_width": 500,
-        "subheading": "Our Values",
-        "title": "Empowering Women",
-        "use_h1": false,
-        "text": "<p>At PAOTI, we believe that fashion is more than just clothing, it's a way to embolden women to be their best selves. Our fashion pieces are designed to make you  feel bold, empowering, unapologetically feminine and most importantly, <em>truly <\/em>unique.<\/p><p>We believe that sophistication is about more than just style - it's a mindset, a way of being in the world. When you wear PAOTI, you're not just wearing a piece of fashion - you're embracing a whole new way of life.<\/p>",
-        "button_label": "Read More",
-        "button_link": "shopify:\/\/pages\/about",
-        "button_style": "primary",
-        "image_position": "left",
-        "text_alignment": "left",
-        "use_alt_bg": false
+        "luxury__title": "<p>Unique <em>Luxury<\/em> Handbacks<\/p>",
+        "luxury__image": "shopify:\/\/shop_images\/DSC04315_1.png"
       }
     }
   },
@@ -639,21 +190,7 @@
     "e7a34445-c4cb-4e57-8667-61323eba44a5",
     "categories",
     "looks",
-    "9670c65d-bc0e-4a50-8dd5-60f8e0f02b33",
     "8361c1c6-0b9a-43dc-8fc3-e7549563a654",
-    "1635927863703110df",
-    "d29be764-5332-4dc5-b57c-9eaae442a1d6",
-    "05bf3aeb-0172-43bd-9217-a489411b663a",
-    "eee4aff1-1145-4d26-a9b8-d6846aee2535",
-    "60892a76-d073-4da2-b1c5-377391c807f5",
-    "3d6edd85-be55-46b0-91e3-fd8a884a5ad5",
-    "16359278867b92de38",
-    "16359276425da8ce46",
-    "a9671d86-1859-4b12-ac93-17440d05fb48",
-    "79692fda-a67b-4c94-a378-acc483261643",
-    "7ffa9d6f-e7fb-40da-aab2-9f4ae3b8d4f8",
-    "60a6248f-afa3-49e0-b617-cc5d6a3da995",
-    "16359278676808bea5",
-    "711e247f-16fb-4b1c-aa66-ca055e217df4"
+    "luxury-products"
   ]
 }
