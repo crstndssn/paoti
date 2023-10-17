@@ -45,3 +45,46 @@ button:hover {
 .luxury__title p {
   margin: 0;
 }
+
+.looks-card p {
+  margin-bottom: 0.5rem;
+  font-size: 12px;
+}
+
+.shop-now {
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+._teaserHeading_ou4pe_29 {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+
+@media screen and (max-width: 700px) {
+  .looks__desktop {
+    display: none;
+  }
+
+  .overlay-text__rte p {
+    font-size: 50px !important;
+    line-height: 4rem !important;
+  }
+}
+
+.paoti-card__title {
+  font-size: 17px !important;
+  font-weight: 400 !important;
+}
+
+.paoti-card__price {
+  font-size: 13px !important;
+  color: #7A7A7A !important;
+  margin: 0;
+}
+
+.cart-logo {
+  width: 20px !important;
+  height: 20px !important;
+  object-fit: none !important;
+}

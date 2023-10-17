@@ -1,0 +1,86 @@
+<div class="container mx-auto py-5 md:pb-0 md:py-10">
+  {% comment %} GET COLLECTION {% endcomment %}
+  {% assign top-picks = collections[section.settings.collection].products %}
+
+  <h2 class="text-[40px] text-black text-center mb-5">{{ section.settings.title }}</h2>
+  <div class="container mx-auto">
+    <div class="swiper top-picks pb-12">
+      <div class="swiper-wrapper mb-2">
+        {% for item in top-picks %}
+          <div class="swiper-slide">
+            {% render 'paoti-card', product: item %}
+          </div>
+        {% endfor %}
+      </div>
+      <div class="swiper-pagination mt-12"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var swiper = new Swiper('.top-picks', {
+    slidesPerView: 1,
+    freeMode: true,
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    breakpoints: {
+      720: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+    },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Top Picks",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Top picks for you"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Select a colletion"
+    }
+  ]
+}
+{% endschema %}
+
+{% style %}
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #000;
+  }
+{% endstyle %}

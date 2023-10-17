@@ -1,14 +1,13 @@
-<div class="w-full h-fit">
-  <img class="mb-2" src="{{ product.images[2] | img_url: 'master' }}">
+<a href="{{ product.url }}">
+  <div class="paoti-card w-full h-fit flex justify-start text-start flex-col">
+    <img class="object-cover mb-2 bg-[#F9F9F9]" src="{{ product.images[0] | img_url: 'master' }}">
 
-  <p class="mb-1 font-medium text-md">{{ product.title }}</p>
+    <p class="paoti-card__title text-[28px] font-medium">{{ product.title }}</p>
 
-  <p class="mb-2 text-[#7A7A7A]">{{ product.price | money_with_currency }}</p>
+    <p class="paoti-card__price text-[#7A7A7A] mb-0 text-sm">{{ product.price | money_with_currency }}</p>
 
-  <div class="product-block__price mb-3">
-    <a class="w-fit border border-black text-sm flex justify-start items-center rounded-full px-3 py-[3px]"
-      >ADD <img class="ml-2 w-[14px] h-[14px] mb-[1px]" src="{{ 'add.svg' | asset_url }}"
-    ></a>
-    {% comment %} <a class="w-fit text-sm"><img class=" w-[18px] h-[1px] mb-[1px]" src="{{ 'add.svg' | asset_url }}"></a> {% endcomment %}
+    <div class="product-block__price mb-3 flex justify-start w-5 h-5">
+      <img class="mt-1 cart-logo" src="{{ 'add.svg' | asset_url }}">
+    </div>
   </div>
-</div>
+</a>

@@ -1,0 +1,45 @@
+<div class="container mx-auto grid grid-cols-1 gap-2 md:grid-cols-4 py-12 px-0">
+  {% for block in section.blocks %}
+    <div class="w-full bg-white text-black">
+      <div class="relative">
+        <img
+          class="object-cover object-top h-[440px] md:h-full w-full"
+          src="{{ block.settings.image | img_url: 'master' }}"
+        >
+        <div class="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-center items-center">
+          <p class="text-[30px] text-white font-thin m-0">{{ block.settings.name }}</p>
+          <a href="{{ block.settings.link }}" class="bg-white px-4 py-2 hover:bg-gray-100 text-[12px]">Ver categoria</a>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "Categories gallery",
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Category",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

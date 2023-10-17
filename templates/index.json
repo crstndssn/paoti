@@ -105,9 +105,48 @@
       }
     },
     "categories": {
-      "type": "categories-paoti",
+      "type": "categories-gallery",
+      "blocks": {
+        "90ee0a94-7f9e-47da-a4e0-c0b48345ddf8": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/handbags.png",
+            "name": "Handbags",
+            "link": ""
+          }
+        },
+        "2bc3c8e1-b24d-4338-837d-aa88d351e1d9": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/straps.png",
+            "name": "Straps",
+            "link": ""
+          }
+        },
+        "eb7fe854-fa6c-41de-ac07-e9a0fcdf737a": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/swimwear.png",
+            "name": "Swimwear",
+            "link": ""
+          }
+        },
+        "4d70c96f-5e3f-4940-bb59-a59db1318fff": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/resortwear.png",
+            "name": "Resortwear",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "90ee0a94-7f9e-47da-a4e0-c0b48345ddf8",
+        "2bc3c8e1-b24d-4338-837d-aa88d351e1d9",
+        "eb7fe854-fa6c-41de-ac07-e9a0fcdf737a",
+        "4d70c96f-5e3f-4940-bb59-a59db1318fff"
+      ],
       "settings": {
-        "collection__carrousel": "carousel"
       }
     },
     "looks": {
@@ -140,22 +179,9 @@
         "section__title": "Paoti's Outfits"
       }
     },
-    "8361c1c6-0b9a-43dc-8fc3-e7549563a654": {
-      "type": "product-list",
+    "top-picks": {
+      "type": "top-picks",
       "settings": {
-        "title": "Featured Handbags",
-        "available_countries": "US",
-        "product_list": [
-          "savannah",
-          "antonia",
-          "hazel",
-          "oprah"
-        ],
-        "show_vendor": false,
-        "enable_carousel": false,
-        "grid": 4,
-        "use_alt_bg": false,
-        "full_width": false
       }
     },
     "luxury-products": {
@@ -190,7 +216,7 @@
     "e7a34445-c4cb-4e57-8667-61323eba44a5",
     "categories",
     "looks",
-    "8361c1c6-0b9a-43dc-8fc3-e7549563a654",
+    "top-picks",
     "luxury-products"
   ]
 }

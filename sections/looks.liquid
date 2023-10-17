@@ -2,20 +2,24 @@
   <div class="swiper-wrapper">
     {% for block in section.blocks %}
       <div
-        class="swiper-slide container mx-auto py-10 w-full"
+        class="swiper-slide  py-10 w-full flex flex-col"
         style="background: {{ block.settings.background__color }}"
       >
-        <h2 class="text-center pb-7 text-2xl">{{ section.settings.section__title }}</h2>
+        <h2 class="text-center text-black pb-7 text-[40px] font-medium">{{ section.settings.section__title }}</h2>
         {% comment %} DESKTOP {% endcomment %}
-        <div class="hidden md:grid md:grid-cols-4 justify-center gap-6 px-20">
+        <div class="looks__desktop sm:hidden md:grid md:grid-cols-4 justify-center gap-6 px-20">
           <div class="col-span-1 flex justify-start items-start flex-col">
-            <div class="w-full bg-white h-fit p-4 pb-0">
-              {% render 'product-block', product: block.settings.first__product %}
+            <div class="w-full bg-white p-3 h-fit pb-1">
+              {% render 'paoti-card', product: block.settings.first__product %}
             </div>
 
             <div class="w-full flex justify-center items-center flex-col mt-5">
-              <a class="bg-black text-white px-8 py-3 mb-2" href="#">Shop the look</a>
-              <a class="decoration-black text-black underline" href="#">Discover lookbook</a>
+              <a class="bg-black text-white px-8 py-3 mb-2 text-[16px]" href="{{ block.settings.look__url }}"
+                >Shop the look</a
+              >
+              <a class="decoration-black text-black underline text-[14px]" href="{{ block.settings.look__lookbook }}"
+                >Discover lookbook</a
+              >
             </div>
           </div>
 
@@ -24,14 +28,14 @@
           </div>
 
           <div class="col-span-1 flex items-end">
-            <div class="w-full bg-white h-fit p-4 pb-0">
-              {% render 'product-block', product: block.settings.second__product %}
+            <div class="w-full bg-white p-3 h-fit pb-1">
+              {% render 'paoti-card', product: block.settings.second__product %}
             </div>
           </div>
         </div>
 
         {% comment %} MOBILE {% endcomment %}
-        <div class="">
+        <div class="looks-card md:hidden">
           <img class="w-full" src="{{ block.settings.look__image | img_url: 'master' }}">
           <div class="">
             <div class="flex p-2">
@@ -53,8 +57,8 @@
       </div>
     {% endfor %}
   </div>
-  <div class="swiper-button-prev text-black"></div>
-  <div class="swiper-button-next text-black"></div>
+  <div class="swiper-button-prev text-black hidden md:flex"></div>
+  <div class="swiper-button-next text-black hidden md:flex"></div>
 </div>
 
 <script>
@@ -101,6 +105,16 @@
           "type": "product",
           "id": "second__product",
           "label": "Second product"
+        },
+        {
+          "type": "url",
+          "id": "look__url",
+          "label": "Url"
+        },
+        {
+          "type": "url",
+          "id": "look__lookbook",
+          "label": "Lookbook"
         }
       ]
     }
