@@ -88,3 +88,7 @@ button:hover {
   height: 20px !important;
   object-fit: none !important;
 }
+
+.swiper-pagination-looks {
+  bottom: 20px !important;
+}

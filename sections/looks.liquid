@@ -35,21 +35,23 @@
         </div>
 
         {% comment %} MOBILE {% endcomment %}
-        <div class="looks-card md:hidden">
+        <div class="looks-card md:hidden relative min-h-screen">
           <img class="w-full" src="{{ block.settings.look__image | img_url: 'master' }}">
-          <div class="">
-            <div class="flex p-2">
-              <div class="w-full bg-white h-fit p-2 md:p-4 mr-1 md:mr-0 pb-0">
-                {% render 'paoti-card', product: block.settings.first__product %}
+          <div class="relative">
+            <div class="absolute top-[-20px]">
+              <div class="flex p-2">
+                <div class="w-full bg-white h-fit p-2 md:p-4 mr-1 md:mr-0 pb-0">
+                  {% render 'paoti-card', product: block.settings.first__product %}
+                </div>
+                <div class="w-full bg-white h-fit p-2 md:p-4 ml-1 md:ml-1 pb-0">
+                  {% render 'paoti-card', product: block.settings.second__product %}
+                </div>
               </div>
-              <div class="w-full bg-white h-fit p-2 md:p-4 ml-1 md:ml-1 pb-0">
-                {% render 'paoti-card', product: block.settings.second__product %}
-              </div>
-            </div>
 
-            <div class="w-full flex justify-center items-center flex-col mt-5">
-              <a class="bg-black text-white px-8 py-3 mb-2" href="#">Shop the look</a>
-              <a class="decoration-black text-black underline" href="#">Discover lookbook</a>
+              <div class="w-full flex justify-center items-center flex-col mt-5">
+                <a class="bg-black text-white px-8 py-3 mb-2" href="#">Shop the look</a>
+                <a class="decoration-black text-black underline" href="#">Discover lookbook</a>
+              </div>
             </div>
           </div>
         </div>
@@ -59,6 +61,7 @@
   </div>
   <div class="swiper-button-prev text-black hidden md:flex"></div>
   <div class="swiper-button-next text-black hidden md:flex"></div>
+  <div class="swiper-pagination swiper-pagination-looks text-black md:hidden"></div>
 </div>
 
 <script>
@@ -66,6 +69,9 @@
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
     },
   });
 </script>
