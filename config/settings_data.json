@@ -1212,8 +1212,15 @@
           "1601374650582": {
             "type": "menu",
             "settings": {
-              "title": "QUICK LINKS",
-              "menu": "footer"
+              "title": "ABOUT US",
+              "menu": "about-us"
+            }
+          },
+          "6c191c77-7dd6-4e00-8b67-a095130b92a2": {
+            "type": "menu",
+            "settings": {
+              "title": "POLICITY",
+              "menu": "policity"
             }
           },
           "1601374580731": {
@@ -1230,6 +1237,7 @@
         "block_order": [
           "1601374680247",
           "1601374650582",
+          "6c191c77-7dd6-4e00-8b67-a095130b92a2",
           "1601374580731"
         ],
         "custom_css": [

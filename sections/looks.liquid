@@ -2,65 +2,94 @@
   <div class="swiper-wrapper">
     {% for block in section.blocks %}
       <div
-        class="swiper-slide  py-10 w-full flex flex-col"
+        class="swiper-slide swiper-slide-content"
         style="background: {{ block.settings.background__color }}"
       >
-        <h2 class="text-center text-black pb-7 text-[40px] font-medium">{{ section.settings.section__title }}</h2>
-        {% comment %} DESKTOP {% endcomment %}
-        <div class="looks__desktop sm:hidden md:grid md:grid-cols-4 justify-center gap-6 px-20">
-          <div class="col-span-1 flex justify-start items-start flex-col">
-            <div class="w-full bg-white p-3 h-fit pb-1">
-              {% render 'paoti-card', product: block.settings.first__product %}
-            </div>
-
-            <div class="w-full flex justify-center items-center flex-col mt-5">
-              <a class="bg-black text-white px-8 py-3 mb-2 text-[16px]" href="{{ block.settings.look__url }}"
-                >Shop the look</a
-              >
-              <a class="decoration-black text-black underline text-[14px]" href="{{ block.settings.look__lookbook }}"
-                >Discover lookbook</a
-              >
-            </div>
-          </div>
-
-          <div class="col-span-2">
-            <img class="w-full" src="{{ block.settings.look__image | img_url: 'master' }}">
-          </div>
-
-          <div class="col-span-1 flex items-end">
-            <div class="w-full bg-white p-3 h-fit pb-1">
-              {% render 'paoti-card', product: block.settings.second__product %}
-            </div>
-          </div>
-        </div>
-
-        {% comment %} MOBILE {% endcomment %}
-        <div class="looks-card md:hidden relative min-h-screen">
-          <img class="w-full" src="{{ block.settings.look__image | img_url: 'master' }}">
-          <div class="relative">
-            <div class="absolute top-[-20px]">
-              <div class="flex p-2">
-                <div class="w-full bg-white h-fit p-2 md:p-4 mr-1 md:mr-0 pb-0">
-                  {% render 'paoti-card', product: block.settings.first__product %}
-                </div>
-                <div class="w-full bg-white h-fit p-2 md:p-4 ml-1 md:ml-1 pb-0">
-                  {% render 'paoti-card', product: block.settings.second__product %}
-                </div>
+        <div class="container mx-auto py-10 md:px-20 md:pb-14 w-full flex flex-col">
+          <h2 class="text-center text-black pb-10 pt-5 text-[40px] font-medium">
+            {{ section.settings.section__title }}
+          </h2>
+          {% comment %} DESKTOP {% endcomment %}
+          <div class="looks__desktop container mx-auto sm:hidden md:grid md:grid-cols-4 justify-center gap-10 p-0">
+            <div class="col-span-1 flex justify-start items-start flex-col">
+              <div class="w-full bg-white p-4 h-fit pb-1">
+                {% render 'paoti-card', product: block.settings.first__product %}
               </div>
 
               <div class="w-full flex justify-center items-center flex-col mt-5">
-                <a class="bg-black text-white px-8 py-3 mb-2" href="#">Shop the look</a>
-                <a class="decoration-black text-black underline" href="#">Discover lookbook</a>
+                <a class="bg-black text-white px-8 py-3 mb-2 text-[14px]" href="{{ block.settings.look__url }}"
+                  >Shop the look</a
+                >
+                <a class="decoration-black text-black underline text-[13px]" href="{{ block.settings.look__lookbook }}"
+                  >Discover lookbook</a
+                >
+              </div>
+            </div>
+
+            <div class="col-span-2">
+              <div class="relative">
+                <img
+                  class="w-full h-full"
+                  src="{{ block.settings.look__image | img_url: 'master' }}"
+                  alt="{{ section.settings.look__image.alt | escape }}"
+                  loading="lazy"
+                  width="{{ block.settings.look__image.width }}"
+                  height="{{ block.settings.look__image.height }}"
+                >
+
+                {% comment %} FIRST INDICATOR  {% endcomment %}
+                <div class="absolute top-[{{ block.settings.look__first-range--y }}%] left-[{{ block.settings.look__first-range--x }}%]">
+                  <div class="relative w-16 h-16">
+                    <div class="absolute top-[7px] left-[7px] w-4 h-4 bg-[#E9E9E9] rounded-full z-10"></div>
+                    <div class="w-[30px] h-[30px] bg-[#E9E9E9] opacity-50 rounded-full"></div>
+                  </div>
+                </div>
+
+                {% comment %} SECOND INDICATOR  {% endcomment %}
+                <div class="absolute top-[{{ block.settings.look__second-range--y }}%] left-[{{ block.settings.look__second-range--x }}%]">
+                  <div class="relative w-16 h-16">
+                    <div class="absolute top-[7px] left-[7px] w-4 h-4 bg-[#E9E9E9] rounded-full z-10"></div>
+                    <div class="w-[30px] h-[30px] bg-[#E9E9E9] opacity-50 rounded-full"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-span-1 flex items-end">
+              <div class="w-full bg-white p-3 h-fit pb-1">
+                {% render 'paoti-card', product: block.settings.second__product %}
               </div>
             </div>
           </div>
+          {% comment %} MOBILE {% endcomment %}
+          <div class="looks-card md:hidden relative min-h-screen">
+            <img class="w-full" src="{{ block.settings.look__image | img_url: 'master' }}">
+            <div class="relative">
+              <div class="absolute top-[-20px]">
+                <div class="flex p-2">
+                  <div class="w-full bg-white h-fit p-2 md:p-4 mr-1 md:mr-0 pb-0">
+                    {% render 'paoti-card', product: block.settings.first__product %}
+                  </div>
+                  <div class="w-full bg-white h-fit p-2 md:p-4 ml-1 md:ml-1 pb-0">
+                    {% render 'paoti-card', product: block.settings.second__product %}
+                  </div>
+                </div>
+
+                <div class="w-full flex justify-center items-center flex-col mt-5">
+                  <a class="bg-black text-white px-8 py-3 mb-2" href="#">Shop the look</a>
+                  <a class="decoration-black text-black underline" href="#">Discover lookbook</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% comment %} end - MOBILE {% endcomment %}
         </div>
-        {% comment %} end - MOBILE {% endcomment %}
       </div>
     {% endfor %}
   </div>
-  <div class="swiper-button-prev text-black hidden md:flex"></div>
-  <div class="swiper-button-next text-black hidden md:flex"></div>
+
+  <div class="swiper-button-prev text-black hidden md:flex ml-7"></div>
+  <div class="swiper-button-next text-black hidden md:flex mr-7"></div>
   <div class="swiper-pagination swiper-pagination-looks text-black md:hidden"></div>
 </div>
 
@@ -108,9 +137,45 @@
           "label": "First product"
         },
         {
+          "type": "range",
+          "id": "look__first-range--x",
+          "min": 0,
+          "default": 50,
+          "max": 100,
+          "step": 1,
+          "label": "First point X"
+        },
+        {
+          "type": "range",
+          "id": "look__first-range--y",
+          "min": 0,
+          "default": 50,
+          "max": 100,
+          "step": 1,
+          "label": "First point Y"
+        },
+        {
           "type": "product",
           "id": "second__product",
           "label": "Second product"
+        },
+        {
+          "type": "range",
+          "id": "look__second-range--x",
+          "min": 0,
+          "default": 50,
+          "max": 100,
+          "step": 1,
+          "label": "Second point X"
+        },
+        {
+          "type": "range",
+          "id": "look__second-range--y",
+          "min": 0,
+          "default": 50,
+          "max": 100,
+          "step": 1,
+          "label": "Second point Y"
         },
         {
           "type": "url",
@@ -132,6 +197,9 @@
   .swiper {
     width: 100%;
     height: 100%;
+  }
+  .swiper-slide-content {
+    width: 100% !important;
   }
   .swiper-slide {
     padding-right: 0;

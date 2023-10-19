@@ -2,9 +2,9 @@
   {% comment %} GET COLLECTION {% endcomment %}
   {% assign top-picks = collections[section.settings.collection].products %}
 
-  <h2 class="text-[40px] text-black text-center mb-5">{{ section.settings.title }}</h2>
+  <h2 class="text-[40px] text-black text-center pt-12 pb-10">{{ section.settings.title }}</h2>
   <div class="container mx-auto">
-    <div class="swiper top-picks pb-12">
+    <div class="swiper top-picks pb-16">
       <div class="swiper-wrapper mb-2">
         {% for item in top-picks %}
           <div class="swiper-slide">
@@ -27,13 +27,13 @@
     },
     breakpoints: {
       720: {
-        slidesPerView: 3,
+        slidesPerView: 4,
         spaceBetween: 50,
       },
     },
     autoplay: {
       delay: 2500,
-      disableOnInteraction: false,
+      disableOnInteraction: true,
     },
   });
 </script>

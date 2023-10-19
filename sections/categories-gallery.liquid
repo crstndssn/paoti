@@ -1,14 +1,16 @@
-<div class="container mx-auto grid grid-cols-1 gap-2 md:grid-cols-4 py-12 px-4 md:px-0">
+<div class="container mx-auto grid grid-cols-1 gap-2 md:grid-cols-4 pt-20 pb-16 px-4 md:px-0">
   {% for block in section.blocks %}
     <div class="w-full bg-white text-black">
-      <div class="relative">
+      <div class="relative w-full h-full">
         <img
-          class="object-cover object-top h-[440px] md:h-full w-full"
+          class="object-cover object-top h-[515px] md:h-full w-full"
           src="{{ block.settings.image | img_url: 'master' }}"
         >
-        <div class="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-center items-center">
+        <div class="absolute top-20 bottom-0 left-0 right-0 flex flex-col justify-center items-center">
           <p class="text-[30px] text-white font-thin m-0">{{ block.settings.name }}</p>
-          <a href="{{ block.settings.link }}" class="bg-white px-4 py-2 hover:bg-gray-100 text-[12px]">Ver categoria</a>
+          <a href="{{ block.settings.link }}" class="bg-[#F4F1EA] px-5 py-3 hover:bg-gray-100 text-[10px] md:mt-2"
+            >Ver categoria</a
+          >
         </div>
       </div>
     </div>

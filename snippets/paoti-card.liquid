@@ -2,9 +2,9 @@
   <div class="paoti-card w-full h-fit flex justify-start text-start flex-col">
     <img class="object-cover mb-2 bg-[#F9F9F9]" src="{{ product.images[0] | img_url: 'master' }}">
 
-    <p class="paoti-card__title text-[28px] font-medium">{{ product.title }}</p>
+    <p class="paoti-card__title text-[28px] font-semibold">{{ product.title }}</p>
 
-    <p class="paoti-card__price text-[#7A7A7A] mb-0 text-sm">{{ product.price | money_with_currency }}</p>
+    <p class="paoti-card__price text-[#7A7A7A] mb-0 text-sm mb-2">{{ product.price | money_with_currency }}</p>
 
     <div class="product-block__price mb-3 flex justify-start w-5 h-5">
       <img class="mt-1 cart-logo" src="{{ 'add.svg' | asset_url }}">

@@ -74,7 +74,7 @@ button:hover {
 
 .paoti-card__title {
   font-size: 17px !important;
-  font-weight: 400 !important;
+  font-weight: 500 !important;
 }
 
 .paoti-card__price {
@@ -92,3 +92,24 @@ button:hover {
 .swiper-pagination-looks {
   bottom: 20px !important;
 }
+
+.signup-form__email {
+  border-radius: 0 !important;
+  margin-bottom: 1rem !important;
+}
+
+@media (min-width: 1280px){
+.container {
+    max-width: 1350px !important;
+}
+}
+
+.swiper-button-prev.swiper-button-disabled {
+  display: none;
+}
+
+.swiper-button-next:after, .swiper-button-prev::after {
+  font-size: 30px !important;
+  font-weight: 600  !important;
+}
+

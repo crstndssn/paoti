@@ -110,7 +110,7 @@
         "90ee0a94-7f9e-47da-a4e0-c0b48345ddf8": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/handbags.png",
+            "image": "shopify:\/\/shop_images\/handbags-hq.webp",
             "name": "Handbags",
             "link": ""
           }
@@ -155,25 +155,36 @@
         "4a16d460-340a-43a1-95af-26efc91a28fe": {
           "type": "look",
           "settings": {
-            "background__color": "#769b7f",
-            "look__image": "shopify:\/\/shop_images\/MPPC20.2.png",
-            "first__product": "kira",
-            "second__product": "eliza"
+            "background__color": "#f4f1ea",
+            "look__image": "shopify:\/\/shop_images\/photo_1_2.png",
+            "first__product": "sp82",
+            "look__first-range--x": 60,
+            "look__first-range--y": 37,
+            "second__product": "eliza",
+            "look__second-range--x": 61,
+            "look__second-range--y": 82,
+            "look__url": "",
+            "look__lookbook": ""
           }
         },
-        "f8b32024-ff16-4313-b0a5-52c553134fa4": {
+        "5f4ea517-6d86-4b9b-96f8-81d713d2cc1e": {
           "type": "look",
           "settings": {
-            "background__color": "#faf2e6",
-            "look__image": "shopify:\/\/shop_images\/Mariela.2.png",
-            "first__product": "abigail",
-            "second__product": "anita"
+            "background__color": "",
+            "first__product": "",
+            "look__first-range--x": 50,
+            "look__first-range--y": 50,
+            "second__product": "",
+            "look__second-range--x": 50,
+            "look__second-range--y": 50,
+            "look__url": "",
+            "look__lookbook": ""
           }
         }
       },
       "block_order": [
         "4a16d460-340a-43a1-95af-26efc91a28fe",
-        "f8b32024-ff16-4313-b0a5-52c553134fa4"
+        "5f4ea517-6d86-4b9b-96f8-81d713d2cc1e"
       ],
       "settings": {
         "section__title": "Paoti's Outfits"
@@ -182,6 +193,8 @@
     "top-picks": {
       "type": "top-picks",
       "settings": {
+        "title": "Top picks for you",
+        "collection": "basics"
       }
     },
     "luxury-products": {
