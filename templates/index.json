@@ -118,7 +118,7 @@
         "2bc3c8e1-b24d-4338-837d-aa88d351e1d9": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/straps.png",
+            "image": "shopify:\/\/shop_images\/2.png",
             "name": "Straps",
             "link": ""
           }
@@ -126,7 +126,7 @@
         "eb7fe854-fa6c-41de-ac07-e9a0fcdf737a": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/swimwear.png",
+            "image": "shopify:\/\/shop_images\/3.png",
             "name": "Swimwear",
             "link": ""
           }
@@ -158,11 +158,11 @@
             "background__color": "#f4f1ea",
             "look__image": "shopify:\/\/shop_images\/photo_1_2.png",
             "first__product": "sp82",
-            "look__first-range--x": 60,
-            "look__first-range--y": 37,
+            "look__first-range--x": 50,
+            "look__first-range--y": 50,
             "second__product": "eliza",
-            "look__second-range--x": 61,
-            "look__second-range--y": 82,
+            "look__second-range--x": 50,
+            "look__second-range--y": 50,
             "look__url": "",
             "look__lookbook": ""
           }
