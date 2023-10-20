@@ -77,6 +77,14 @@ button:hover {
   font-weight: 500 !important;
 }
 
+
+@media (min-width: 1280px){
+  .paoti-card__title {
+    font-size: 17px !important;
+    font-weight: 400 !important;
+  }
+  }
+
 .paoti-card__price {
   font-size: 13px !important;
   color: #7A7A7A !important;
@@ -113,3 +121,6 @@ button:hover {
   font-weight: 600  !important;
 }
 
+.section-footer .signup-form__email {
+  font-size: 14px;
+}

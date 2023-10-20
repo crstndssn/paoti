@@ -1,7 +1,32 @@
 <div data-section-type="footer">
   {% if section.blocks != blank %}
-    <div class="container mx-auto p-0">
-      <div class="section-footer__row section-footer__row--blocks" data-num-blocks="{{ section.blocks.size }}">
+    <div class="container mx-auto md:p-0 pt-10">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'text' %}
+            {% if block.settings.image != blank %}
+              <span class="section-footer__text-block__image">
+                {%- capture double_image_width -%}{{ block.settings.image_width | times: 2 }}x{%- endcapture -%}
+                <div class="rimage-outer-wrapper" style="width: {{ block.settings.image_width }}px">
+                  <div
+                    class="rimage-wrapper lazyload--placeholder"
+                    style="padding-top:{{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%"
+                  >
+                    <img
+                      class="rimage__image lazyload fade-in"
+                      data-src="{{ block.settings.image | img_url: double_image_width }}"
+                      alt="{{ shop.name | escape }}"
+                    >
+                  </div>
+                </div>
+              </span>
+            {% endif %}
+        {% endcase %}
+      {% endfor %}
+      <div
+        class="section-footer__row section-footer__row--blocks pt-3 pb-10"
+        data-num-blocks="{{ section.blocks.size }}"
+      >
         {% for block in section.blocks %}
           {% case block.type %}
             {% when '@app' %}
@@ -24,9 +49,9 @@
                 {% endif %}
 
                 {% if block.settings.menu != blank %}
-                  <ul class="section-footer__menu-block__menu" {{ block.shopify_attributes }}>
+                  <ul class="text-xs list-none" {{ block.shopify_attributes }}>
                     {% for link in linklists[block.settings.menu].links %}
-                      <li>
+                      <li class="list-none">
                         <a
                           href="{{ link.url }}"
                           {% if link.title.size < 25 %}
@@ -54,32 +79,17 @@
                 {% endif %}
 
                 {% if block.settings.text != blank %}
-                  <div class="section-footer__text">
+                  <div class="section-footer__text text-xs">
                     {{- block.settings.text -}}
                   </div>
-                {% endif %}
-
-                {% if block.settings.image != blank %}
-                  <span class="section-footer__text-block__image">
-                    {%- capture double_image_width -%}{{ block.settings.image_width | times: 2 }}x{%- endcapture -%}
-                    <div class="rimage-outer-wrapper" style="width: {{ block.settings.image_width }}px">
-                      <div
-                        class="rimage-wrapper lazyload--placeholder"
-                        style="padding-top:{{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%"
-                      >
-                        <img
-                          class="rimage__image lazyload fade-in"
-                          data-src="{{ block.settings.image | img_url: double_image_width }}"
-                          alt="{{ shop.name | escape }}"
-                        >
-                      </div>
-                    </div>
-                  </span>
                 {% endif %}
               </div>
 
             {% when 'newsletter' %}
-              <div class="section-footer__row__col section-footer__newsletter-block" {{ block.shopify_attributes }}>
+              <div
+                class="section-footer__row__col section-footer__newsletter-block text-xs"
+                {{ block.shopify_attributes }}
+              >
                 {% if block.settings.title != blank %}
                   {%- assign title_word_count = block.settings.title | split: ' ' | size -%}
                   <div class="section-footer__title heading-font h6-style{% if title_word_count < 4 %} no-wrap{% endif %}">
@@ -112,31 +122,22 @@
                         <input
                           type="email"
                           placeholder="{{ 'layout.signup.placeholder' | t }}"
-                          class="signup-form__email rounded-none mb-3"
+                          class="signup-form__email rounded-none mb-3 text-xs"
                           value=""
                           name="contact[email]"
                           aria-label="{{ 'layout.signup.input_label' | t | escape }}"
                           required
                         >
                       </p>
-                      <button class="btn btn--{{ block.settings.button_style }} signup-form__button" type="submit">
+                      <button
+                        class="btn btn--{{ block.settings.button_style }} signup-form__button rounded-none text-xs tracking-normal"
+                        type="submit"
+                      >
                         {{- 'layout.signup.submit' | t -}}
                       </button>
                     {% endif %}
                   {% endform %}
                 </div>
-
-                {% if block.settings.show_social_icons != blank %}
-                  <div class="section-footer__newsletter-block__social">
-                    {% capture icon_size %}{% if block.settings.soc_icons_large %}x46{% else %}x30{% endif %}{% endcapture %}
-                    {% capture container_class %}{% if block.settings.soc_icons_large %}social-links--large{% else %}{% endif %}{% endcapture %}
-                    {% render 'social-icons',
-                      icon_setting: settings.social_custom_icon_footer,
-                      icon_size: icon_size,
-                      container_class: container_class
-                    %}
-                  </div>
-                {% endif %}
               </div>
           {% endcase %}
         {% endfor %}
@@ -151,7 +152,7 @@
   {%- if section.settings.show_country_selector and localization.available_countries.size > 1 -%}
     {%- assign showing_localization = true -%}
   {%- endif -%}
-  <div class="container container--no-max section-footer__row-container {% if showing_localization %}section-footer__row-container--with-localization{% endif %}">
+  <div class="container mx-auto px-0 {% if showing_localization %}section-footer__row-container--with-localization{% endif %}">
     <div class="section-footer__row section-footer__row-lower">
       <div class="section-footer__row__col">
         {% if section.settings.show_payment_icons %}
@@ -184,15 +185,6 @@
             {% render 'localization', input_prefix: 'footer' %}
           </div>
         {% endif %}
-
-        <div class="copyright">
-          <span class="copy"
-            >&copy; {{ 'now' | date: '%Y' }}
-            <a href="{{ routes.root_url }}">{{ shop.name }}</a>. PAOTI LLC.</span
-          >
-
-          {{ powered_by_link }}
-        </div>
       </div>
     </div>
   </div>

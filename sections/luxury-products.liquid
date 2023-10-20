@@ -1,14 +1,14 @@
 <div class="flex flex-col md:flex-row w-full mt-10">
-  <div class="w-full md:w-1/2 relative">
+  <div class="container md:p-0 w-full md:w-1/2 relative">
     <img
-      class="object-cover h-[60vh] md:h-[80vh] w-full"
+      class="object-cover h-[60vh] md:h-[90vh] w-full"
       src="{{ section.settings.luxury__image | img_url: 'master' }}"
     >
-    <h2 class="luxury__title w-fit md:w-2/3 text-[50px] md:text-[60px] ml-7 mb-7 md:mb-12 md:ml-12 absolute bottom-0 text-white">
+    <h2 class="luxury__title w-fit md:w-2/3 text-[50px] md:text-[55px] ml-7 mb-7 md:mb-12 md:ml-12 absolute bottom-0 text-white">
       {{ section.settings.luxury__title }}
     </h2>
   </div>
-  <div class="w-full md:w-1/2 py-12 md:py-0 md:h-[80vh] flex justify-center items-center bg-[#F9F9F9]">
+  <div class="w-full md:w-1/2 py-12 md:py-0 md:h-[90vh] flex justify-center items-center bg-[#F9F9F9]">
     <div class="swiper-wrapper luxury-products swiper-wrapper__luxury-products mx-4 gap-3 md:ml-10 grid grid-cols-2">
       {% for block in section.blocks %}
         <div class="w-full bg-white text-black h-fit p-2 md:p-4 pb-0">
