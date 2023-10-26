@@ -147,6 +147,25 @@
     <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'tailwind.css' | asset_url }}" defer="defer"></script>
 
+    <script
+      src="https://sleekflow.io/whatsapp-button.js"
+      async
+      onLoad="
+        whatsappButton({
+        buttonName:'',
+        buttonIconSize: '30',
+        brandImageUrl:'https://cdn.shopify.com/s/files/1/0711/1891/3812/files/WhatsApp.png?v=1697806274',
+        buttonMargin:'false',
+        brandName:'Paoti',
+        brandSubtitleText:'We respond within one day',
+        buttonSize:'large',
+        callToAction:'Start Chat',
+        phoneNumber:'17868190155',
+        welcomeMessage:'Hi there 👋',
+        })
+      "
+    ></script>
+
     {{ content_for_header }}
 
     {% render 'shogun-head' %}

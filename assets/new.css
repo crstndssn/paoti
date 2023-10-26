@@ -124,3 +124,125 @@ button:hover {
 .section-footer .signup-form__email {
   font-size: 14px;
 }
+
+#wa-cta-button-powered {
+  display: none !important;
+}
+
+.wa-widget-wrapper {
+  bottom: 35px !important;
+}
+
+._container_3eyaa_70 h3 {
+  font-weight: 400 !important;
+}
+
+.appEmbed h3{
+  font-weight: 400 !important;
+}
+
+h3 {
+  font-weight: 400 !important;
+}
+
+button {
+  font-weight: 400 !important;
+}
+
+@media (max-width: 1280px){
+  .wa-widget-wrapper {
+    bottom: 15px !important;
+    right: 16px !important;
+  }
+}
+
+._teaserHeading_ou4pe_29 {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.wa-cta-button:hover {
+  background-color: hsl(142, 70%,49%) !important;
+}
+
+.wa-widget-wrapper p {
+  font-family: 'Roboto', sans-serif !important;
+  letter-spacing: 0 !important;
+}
+
+.wa-chat-bubble-wrapper p:first-child {
+  margin-bottom: 3px !important;
+}
+
+.section-footer__row--blocks .section-footer__row__col:not(:last-child) {
+  margin-bottom: 30px !important;
+}
+
+
+/* PRODUCT */
+
+.product-detail .detail .title {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 35px;
+  font-weight: 400;
+  color: #000;
+}
+
+.product-description {
+  margin: 30px 0 !important;
+}
+
+.price {
+  margin-bottom: 10px;
+}
+
+.current-price {
+  font-weight: 500 !important;
+  color: #000;
+}
+
+.shopify-installments {
+  display: flex;
+  flex-direction: column;
+}
+
+.quantity-submit-row__submit button:hover {
+  background: black !important;
+  color: white !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  text-transform: lowercase !important;
+}   
+
+.product-form .quantity-submit-row .quantity-submit-row__submit button{
+  border-radius: 0 !important;
+  text-transform: capitalize !important;
+}
+
+.cc-accordion-item, .cc-accordion {
+  border: none !important;
+}
+
+.cc-accordion-item__title {
+  font-size: 17px;
+    font-weight: 400 !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cc-accordion-item .icon--small {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px !important;
+  margin-right: 9px !important;
+}
+
+.buy-buttons-row {
+  margin: 0px !important;
+}
+
+/* you may also like */
+.hometitle {
+  font-size: 30px;
+  font-weight: 500;
+  color: black;
+  margin-top: 25px !important;
+}

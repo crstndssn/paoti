@@ -1,6 +1,6 @@
 <div data-section-type="footer">
   {% if section.blocks != blank %}
-    <div class="container mx-auto md:p-0 pt-10">
+    <div class="container mx-auto md:p-0 pt-10 md:pt-7">
       {% for block in section.blocks %}
         {% case block.type %}
           {% when 'text' %}
@@ -68,7 +68,7 @@
 
             {% when 'text' %}
               <div
-                class="section-footer__row__col section-footer__text-block {% if block.settings.text != blank %}section-footer__text-block--with-text{% endif %}"
+                class="section-footer__row__col section-footer__text-block mb-4 md:mb-auto {% if block.settings.text != blank %}section-footer__text-block--with-text{% endif %}"
                 {{ block.shopify_attributes }}
               >
                 {% if block.settings.title != blank %}
@@ -152,7 +152,7 @@
   {%- if section.settings.show_country_selector and localization.available_countries.size > 1 -%}
     {%- assign showing_localization = true -%}
   {%- endif -%}
-  <div class="container mx-auto px-0 {% if showing_localization %}section-footer__row-container--with-localization{% endif %}">
+  <div class="container mx-auto md:px-0 {% if showing_localization %}section-footer__row-container--with-localization{% endif %}">
     <div class="section-footer__row section-footer__row-lower">
       <div class="section-footer__row__col">
         {% if section.settings.show_payment_icons %}
