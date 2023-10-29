@@ -6,7 +6,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Cormorant', serif !important;
 }
 
@@ -23,10 +26,11 @@ button:hover {
   border: solid 1px green;
 }
 
-.swiper-button-prev , .swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
   color: #000 !important;
   font-size: 20px;
-} 
+}
 
 .swiper-button-prev:after {
   font-family: swiper-icons;
@@ -78,12 +82,12 @@ button:hover {
 }
 
 
-@media (min-width: 1280px){
+@media (min-width: 1280px) {
   .paoti-card__title {
     font-size: 17px !important;
     font-weight: 400 !important;
   }
-  }
+}
 
 .paoti-card__price {
   font-size: 13px !important;
@@ -106,19 +110,20 @@ button:hover {
   margin-bottom: 1rem !important;
 }
 
-@media (min-width: 1280px){
-.container {
+@media (min-width: 1280px) {
+  .container {
     max-width: 1350px !important;
-}
+  }
 }
 
 .swiper-button-prev.swiper-button-disabled {
   display: none;
 }
 
-.swiper-button-next:after, .swiper-button-prev::after {
+.swiper-button-next:after,
+.swiper-button-prev::after {
   font-size: 30px !important;
-  font-weight: 600  !important;
+  font-weight: 600 !important;
 }
 
 .section-footer .signup-form__email {
@@ -137,7 +142,7 @@ button:hover {
   font-weight: 400 !important;
 }
 
-.appEmbed h3{
+.appEmbed h3 {
   font-weight: 400 !important;
 }
 
@@ -149,7 +154,7 @@ button {
   font-weight: 400 !important;
 }
 
-@media (max-width: 1280px){
+@media (max-width: 1280px) {
   .wa-widget-wrapper {
     bottom: 15px !important;
     right: 16px !important;
@@ -161,7 +166,7 @@ button {
 }
 
 .wa-cta-button:hover {
-  background-color: hsl(142, 70%,49%) !important;
+  background-color: hsl(142, 70%, 49%) !important;
 }
 
 .wa-widget-wrapper p {
@@ -211,21 +216,22 @@ button {
   box-shadow: none !important;
   border-radius: 0 !important;
   text-transform: lowercase !important;
-}   
+}
 
-.product-form .quantity-submit-row .quantity-submit-row__submit button{
+.product-form .quantity-submit-row .quantity-submit-row__submit button {
   border-radius: 0 !important;
   text-transform: capitalize !important;
 }
 
-.cc-accordion-item, .cc-accordion {
+.cc-accordion-item,
+.cc-accordion {
   border: none !important;
 }
 
 .cc-accordion-item__title {
   font-size: 17px;
-    font-weight: 400 !important;
-    font-family: 'Roboto', sans-serif;
+  font-weight: 400 !important;
+  font-family: 'Roboto', sans-serif;
 }
 
 .cc-accordion-item .icon--small {
@@ -245,4 +251,48 @@ button {
   font-weight: 500;
   color: black;
   margin-top: 25px !important;
+}
+
+/* contact */
+
+.contact-paoti h1 {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 24px;
+  font-weight: 500;
+  color: black;
+}
+
+.contact-paoti h2 {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 24px;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+.contact-paoti textarea {
+  padding: 1rem;
+}
+
+.contact-paoti button {
+  background: #000;
+  padding: 0.5rem 1rem;
+  color: white;
+  border: 1px solid black !important;
+  letter-spacing: 0;
+}
+
+.contact-paoti button:hover {
+  background: white !important;
+  color: black;
+  border: 1px solid black !important;
+}
+
+
+@media screen and (max-width: 800px) {
+  .overlay-text__rte p {
+    font-size: 20px !important;
+    line-height: 2rem !important;
+  }
+
 }
