@@ -255,6 +255,18 @@ button {
 
 /* contact */
 
+.contact-paoti {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+@media screen and (max-width: 800px) {
+  .contact-paoti {
+    flex-direction: column;
+  }
+}
+
 .contact-paoti h1 {
   font-family: 'Roboto', sans-serif !important;
   font-size: 24px;
@@ -294,5 +306,28 @@ button {
     font-size: 20px !important;
     line-height: 2rem !important;
   }
+}
 
+.details-company {
+  text-align: left;
+}
+
+@media screen and (max-width: 800px) {
+  .details-company {
+    margin-bottom: 1rem !important;
+  }
+}
+
+.details-company {
+  color: black;
+}
+
+.majortitle {
+  text-align: left !important;
+}
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
