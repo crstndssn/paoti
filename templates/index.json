@@ -125,6 +125,7 @@
         },
         "eb7fe854-fa6c-41de-ac07-e9a0fcdf737a": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/3.png",
             "name": "Swimwear",
@@ -133,6 +134,7 @@
         },
         "4d70c96f-5e3f-4940-bb59-a59db1318fff": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/resortwear.png",
             "name": "Resortwear",
