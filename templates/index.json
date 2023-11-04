@@ -160,23 +160,9 @@
             "background__color": "#f4f1ea",
             "look__image": "shopify:\/\/shop_images\/photo_1_2.png",
             "first__product": "sp82",
-            "look__first-range--x": 50,
-            "look__first-range--y": 50,
+            "look__first-range--x": 60,
+            "look__first-range--y": 82,
             "second__product": "eliza",
-            "look__second-range--x": 50,
-            "look__second-range--y": 50,
-            "look__url": "",
-            "look__lookbook": ""
-          }
-        },
-        "5f4ea517-6d86-4b9b-96f8-81d713d2cc1e": {
-          "type": "look",
-          "settings": {
-            "background__color": "",
-            "first__product": "",
-            "look__first-range--x": 50,
-            "look__first-range--y": 50,
-            "second__product": "",
             "look__second-range--x": 50,
             "look__second-range--y": 50,
             "look__url": "",
@@ -185,8 +171,7 @@
         }
       },
       "block_order": [
-        "4a16d460-340a-43a1-95af-26efc91a28fe",
-        "5f4ea517-6d86-4b9b-96f8-81d713d2cc1e"
+        "4a16d460-340a-43a1-95af-26efc91a28fe"
       ],
       "settings": {
         "section__title": "Paoti's Outfits"
