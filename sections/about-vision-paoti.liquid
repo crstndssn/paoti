@@ -1,0 +1,59 @@
+<div class="about-vision container mx-auto py-12">
+  <div class="flex justify-center items-center flex-col mb-7">
+    <p class="uppercase mb-5 text-black text-sm">{{ section.settings.about__pretitle }}</p>
+    <h2 class="text-3xl uppercase text-black">{{ section.settings.about__title }}</h2>
+  </div>
+
+  <div class="flex flex-col md:flex-row items-center mb-7">
+    <div class="md:w-1/3">
+      <img
+        class="w-full h-auto"
+        src="{{ section.settings.about__image | img_url: 'master' }}"
+        alt="{{  section.settings.about__image.alt }}"
+      >
+    </div>
+    <div class="bg-[#F4F1EA] md:w-2/3 h-fit py-10 px-12">
+      <img
+        class="w-20 h-20 mb-3"
+        src="{{ section.settings.about__logo | img_url: 'master' }}"
+        alt="{{  section.settings.about__logo.alt }}"
+      >
+      <div class="about-vision__description">
+        {{ section.settings.about__description }}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Vision",
+  "settings": [
+    {
+      "type": "text",
+      "id": "about__pretitle",
+      "label": "Pretitle"
+    },
+    {
+      "type": "text",
+      "id": "about__title",
+      "label": "Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "about__image",
+      "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "about__logo",
+      "label": "Logo"
+    },
+    {
+      "type": "richtext",
+      "id": "about__description",
+      "label": "Description"
+    }
+  ]
+}
+{% endschema %}

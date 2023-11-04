@@ -1,0 +1,84 @@
+{% for block in section.blocks %}
+  <div class="about__text py-10 container mx-auto flex flex-col md:{{ block.settings.text__position }}">
+    <div class="w-full md:w-1/2">
+      <img
+        class="w-full h-auto"
+        src="{{ block.settings.text__image | img_url: 'master' }}"
+        alt="{{ block.settings.text__pretitle }}"
+      >
+    </div>
+
+    <div
+      class="w-full md:w-1/2 p-10 flex justify-center items-start flex-col"
+    >
+      <p class="text-xl">{{ block.settings.text__pretitle }}</p>
+      <h2 class="text-3xl my-4 text-black">{{ block.settings.text__title }}</h2>
+      <div class="mb-4">
+        {{ block.settings.text__description }}
+      </div>
+      {% if block.settings.text__button != '' %}
+        <a href="{{ block.settings.text__url }}" class="bg-black text-white p-3">{{ block.settings.text__button }}</a>
+      {% endif %}
+    </div>
+  </div>
+{% endfor %}
+
+{% schema %}
+{
+  "name": "About text",
+  "blocks": [
+    {
+      "type": "icon",
+      "name": "icon",
+      "settings": [
+        {
+          "type": "select",
+          "id": "text__position",
+          "label": "Image position",
+          "default": "flex-row",
+          "options": [
+            {
+              "label": "Left",
+              "value": "flex-row"
+            },
+            {
+              "label": "Right",
+              "value": "flex-row-reverse"
+            }
+          ]
+        },
+        {
+          "type": "image_picker",
+          "id": "text__image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "text__pretitle",
+          "label": "Pretitle"
+        },
+        {
+          "type": "text",
+          "id": "text__title",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "text__description",
+          "label": "Description"
+        },
+        {
+          "type": "text",
+          "id": "text__button",
+          "label": "Button"
+        },
+        {
+          "type": "url",
+          "id": "text__url",
+          "label": "Url"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

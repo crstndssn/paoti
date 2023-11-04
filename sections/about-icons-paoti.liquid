@@ -1,0 +1,40 @@
+<div class="bg-[#F9F9F9] w-full">
+  <div class="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-10">
+    {% for block in section.blocks %}
+      <div class="flex flex-col justify-center items-center my-12">
+        <img
+          class="w-28 h-28"
+          src="{{ block.settings.about__icon | file_url }}"
+          alt="{{ block.settings.about__feature}}"
+        >
+        <p class="text-base mt-5 text-black">
+          {{ block.settings.about__feature }}
+        </p>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "About icons",
+  "blocks": [
+    {
+      "type": "icon",
+      "name": "icon",
+      "settings": [
+        {
+          "type": "text",
+          "id": "about__icon",
+          "label": "Name SVG"
+        },
+        {
+          "type": "text",
+          "id": "about__feature",
+          "label": "Text"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

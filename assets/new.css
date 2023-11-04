@@ -331,3 +331,21 @@ button {
   flex-direction: column;
   justify-content: center;
 }
+
+.product-block__title h3 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif !important;
+  color: #000;
+}
+
+
+.about__text h2{
+  font-family: 'Roboto', sans-serif !important;
+}
+
+
+.about-vision__description p {
+  margin-bottom: 1rem;
+}

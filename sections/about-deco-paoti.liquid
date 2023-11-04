@@ -1,0 +1,39 @@
+<div class="bg-[#F4F1EA] py-12">
+  <div class="container mx-auto flex justify-center items-center flex-col ">
+    <img
+      src="{{ section.settings.deco__image | img_url: 'master' }}"
+      alt="{{ section.settings.deco__title }}"
+      loading="lazy"
+    >
+
+    <h2 class="text-3xl">
+      {{ section.settings.deco__title }}
+    </h2>
+    <div class="text-center mt-2">
+      {{ section.settings.deco__description }}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "About Deco",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "deco__image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "deco__title",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "deco__description",
+      "label": "Description"
+    }
+  ]
+}
+{% endschema %}
