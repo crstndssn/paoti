@@ -10,7 +10,7 @@
       <h4 class="align-center hometitle">{{ section.settings.title }}</h4>
 
       <div class="collection-listing related-collection">
-        <div class="grid md:grid-cols-{{ section.settings.grid }} grid-cols-{{ settings.prod_thumb_mob_per_row }} product-list--image-shape-{{ settings.prod_thumb_shape }}">
+        <div class="grid md:grid-cols-{{ section.settings.grid }} grid-cols-{{ settings.prod_thumb_mob_per_row }} md:gap-8 product-list--image-shape-{{ settings.prod_thumb_shape }}">
           {%- liquid
             if settings.prod_thumb_shape == 'portrait-23'
               assign chosen_aspect_ratio = 0.67
