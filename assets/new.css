@@ -423,3 +423,7 @@ button {
   text-decoration-color: #CC0000 !important;
   font-size: 13px !important;
 }
+
+.rimage-outer-wrapper {
+  max-width: 130px;
+}
