@@ -383,7 +383,15 @@ button {
   border-radius: 0;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  border-bottom: 1px solid black !important;
 }
+.checkout-buttons button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-bottom: 1px solid black !important;
+  }
+
 
 .shopify-cleanslate .h7OYsWHrW5495r9beh2n {
   background-color: transparent !important;
