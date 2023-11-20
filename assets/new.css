@@ -347,6 +347,79 @@ button {
 }
 
 
+/* cart page */
+
+.cart-item__image a {
+  color: black;
+}
+
 .about-vision__description p {
   margin-bottom: 1rem;
+}
+
+.majortitle {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 23px;
+  color: black; 
+  text-align: center !important; 
+}
+
+.subtotal {
+  font-family: 'Roboto', sans-serif !important;
+  margin-bottom: 10px !important;
+  font-size: 24px !important;
+  color: black;
+}
+
+.checkout-note {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.checkout-buttons button {
+  background-color: #000;
+  text-transform: capitalize;
+  padding: 18px 20px !important;
+  border-radius: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.shopify-cleanslate .h7OYsWHrW5495r9beh2n {
+  background-color: transparent !important;
+}
+
+.shopify-cleanslate .DnvZqPMEvBFbBre5UuP9 {
+  background-color: transparent !important;
+}
+
+.cart-item-list__head {
+  font-size: 17px;
+  color: #7A7A7A;
+}
+
+.cart-item__column img {
+  background-color: #F9F9F9;
+}
+
+.cart-item__title {
+  font-size: 20px;
+  margin-bottom: 10px !important;
+  font-weight: 500 !important;
+}
+
+.cart-item__selling-price, .cart-item__selling-total {
+  color: #000;
+  font-size: 20px;
+  font-weight: 500 !important;
+}
+.struck-out-price {
+  font-size: 14px !important;
+  margin-top: 3px;
+  color: #7A7A7A;
+}
+.cart-item__remove {
+  color: #CC0000;
+  text-decoration-color: #CC0000 !important;
+  font-size: 13px !important;
 }
