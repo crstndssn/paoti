@@ -112,7 +112,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/handbags-hq.webp",
             "name": "Handbags",
-            "link": ""
+            "link": "shopify:\/\/collections\/unique-handbags"
           }
         },
         "2bc3c8e1-b24d-4338-837d-aa88d351e1d9": {
@@ -120,7 +120,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/2.png",
             "name": "Straps",
-            "link": ""
+            "link": "shopify:\/\/collections\/straps"
           }
         },
         "eb7fe854-fa6c-41de-ac07-e9a0fcdf737a": {
