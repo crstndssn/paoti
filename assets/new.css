@@ -435,3 +435,6 @@ button {
 .rimage-outer-wrapper {
   max-width: 130px;
 }
+.collection-listing .rimage-outer-wrapper {
+  max-width: auto !important;
+}
