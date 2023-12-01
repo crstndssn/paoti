@@ -32,21 +32,19 @@
         "a5204b34-8343-4c86-ac82-e342930618c3": {
           "type": "icon",
           "settings": {
+            "text__position": "flex-row",
             "text__image": "shopify:\/\/shop_images\/our-values.png",
             "text__pretitle": "Custom Unique Pieces Handcrafted with Dedication",
             "text__title": "Where Tradition Meets Innovation",
-            "text__description": "<p>The skill of our ancestral weavers and the passionate craftsmanship of our master leatherworkers define the essence of PAOTI. Every bag that emerges from our workshop is a symphony of exquisite materials and skilled hands.Our artisans seamlessly meld ancestral traditions with contemporary innovation, resulting in pieces that pay homage to our heritage while embracing a futuristic vision.<\/p>"
+            "text__description": "<p>The skill of our ancestral weavers and the passionate craftsmanship of our master leatherworkers define the essence of PAOTI. Every bag that emerges from our workshop is a symphony of exquisite materials and skilled hands.Our artisans seamlessly meld ancestral traditions with contemporary innovation, resulting in pieces that pay homage to our heritage while embracing a futuristic vision.<\/p>",
+            "text__button": "",
+            "text__url": ""
           }
         }
       },
       "block_order": [
         "a5204b34-8343-4c86-ac82-e342930618c3"
       ],
-      "settings": {
-      }
-    },
-    "deco": {
-      "type": "about-deco-paoti",
       "settings": {
       }
     },
@@ -89,6 +87,14 @@
         "eb26b3a8-b5f6-4ac2-9f0d-b55b63a5e016"
       ],
       "settings": {
+      }
+    },
+    "deco": {
+      "type": "about-deco-paoti",
+      "settings": {
+        "deco__image": "shopify:\/\/shop_images\/main-handbag.png",
+        "deco__title": "Welcome to Our Lifestyle",
+        "deco__description": "<p>We believe that sophistication is about more than just style - it's a mindset, a way of being in the world. When you wear PAOTI, you're not just wearing a piece of fashion - you're embracing a whole new way of life.<\/p>"
       }
     },
     "vision": {
