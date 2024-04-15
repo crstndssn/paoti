@@ -86,7 +86,7 @@
         "buy_buttons"
       ],
       "custom_css": [
-        ".product-detail .detail .title {line-height: 35px;}"
+        ".product-detail .detail .title {line-height: 40px;}"
       ],
       "settings": {
         "show_breadcrumbs": true,
