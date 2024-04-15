@@ -85,6 +85,9 @@
         "9a38f73a-4f02-4aa8-8426-255f4b29a540",
         "buy_buttons"
       ],
+      "custom_css": [
+        ".product-detail .detail .title {line-height: 35px;}"
+      ],
       "settings": {
         "show_breadcrumbs": true,
         "show_location_underneath": false,
