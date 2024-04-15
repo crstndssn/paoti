@@ -5,6 +5,7 @@
       "blocks": {
         "ebb9643f-67f0-4d35-b494-3a788e89f461": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "<div>{% for variant in product.variants %}\n<div>\n{{variant.barcode}}\n<\/div>\n{% endfor %}\n<\/div>",
             "show_in_quickbuy": false
