@@ -60,7 +60,7 @@
             "title": "Packaging",
             "icon": "box",
             "content": "<p>Collapsible tab content<\/p>",
-            "page": "packaging",
+            "page": "",
             "open": false,
             "show_in_quickbuy": false
           }
