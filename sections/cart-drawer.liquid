@@ -58,7 +58,11 @@
                 
                 {% if cart.items.size != 0 %}
                      {% if cart.total_price >= 20000 %}
-                          You've got free shipping 👌
+                          {% if request.locale.iso_code == 'es' %}
+                            Tienes envío gratuito 👌
+                          {% else %}
+                            You've got free shipping 👌
+                          {% endif %}
                      {% elsif cart.total_price < 20000 %}
                           You're only {{ 20000 | minus: cart.total_price | money }} away from free shipping
                      {% endif %}
