@@ -56,59 +56,6 @@
                      Add items to your cart to receive free shipping
                 {% endif %}
                 
-                <div class="drawer__shipping">
-                  <div class="progress_bar_custom"><div style="height: 15px; background-color: #EEEEEE; width: 100%; font-size: 12px; line-height: 16px; font-weight: 600; border-radius: 10px; color: #fff;"><div style="height: 15px; background-color: #c16452; width: {{ cart.total_price }}%; max-width: 100%; text-align: center; font-size: 12px; line-height: 16px; font-weight: 600; border-radius: 10px; display: block"></div><span style="display: block; margin-top: -15px; text-align: center">{% if cart.total_price < 20000 %}{{ cart.total_price | divided_by: 200 }}%{% else %}100%{% endif %}</span></div></div>
-                  <p class="drawer__heading" style="margin-top: 4px; text-align: center;">{% if cart.items.size == 0 %}{% endif %}{% if cart.items.size != 0 %}{% if cart.total_price >= 20000 %} ¡Felicidades! Tu compra tiene envío gratis 👌{% elsif cart.total_price < 20000 %}¡Sólo te faltan <strong>{{ 20000 | minus: cart.total_price | money }}</strong> para tener envío gratis!{% endif %}{% endif %}</p>
-                </div>
-                <style>
-                  .drawer__shipping {
-                    margin: 0;
-                    background-color: #F9F2E6;
-                    padding: 1rem;
-                  }
-                  .drawer__shipping .progress_bar {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 1rem;
-                    font-size: 14px;
-                    color: #fff;
-                    font-weight: 500;
-                  }
-                  .drawer__shipping .progress_bar progress::-webkit-progress-bar {
-                    background-color: #eeeeee;
-                    border-radius: 5px;
-                  }
-                  .drawer__shipping .progress_bar progress::-webkit-progress-value {
-                    background-color: #8CDF6F !important;
-                    height: 5px;
-                    width: 50%;
-                    border-radius: 5px;
-                  }
-                  .drawer__shipping .progress_bar progress {
-                    background-color: #eee;
-                    border-radius: 5px;
-                  }
-                  .drawer__shipping .progress_bar progress::-moz-progress-bar {
-                    background-color: #8CDF6F !important;
-                    height: 5px;
-                    width: 50%;
-                    border-radius: 5px;
-                  }
-                  .drawer__shipping .progress_bar progress {
-                    background-color: #eee;
-                    border-radius: 5px;
-                  }
-                  .drawer__shipping .progress_bar progress {
-                    background-color: #8CDF6F;
-                    height: 5px;
-                    width: 50%;
-                    border-radius: 5px;
-                  }
-                  .drawer__shipping .progress_bar_custom {
-                    margin-top: 5px;
-                  }
-                </style>
                 
                 {%- if settings.show_free_shipping_bar -%}
                   <div class="cart-drawer__content-item">
