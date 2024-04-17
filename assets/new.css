@@ -348,9 +348,13 @@ button {
 
 
 /* cart page */
+.cart-item__image {
+    width: 200px;
+}
 
 .cart-item__image a {
   color: black;
+  font-size: 14px;
 }
 
 .about-vision__description p {
