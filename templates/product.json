@@ -50,7 +50,7 @@
             "icon": "heart",
             "content": "<ol><li><strong>Preservation of Color and Texture<\/strong>: Safeguard the vibrant color palette and exquisite artisanal texture by washing only with mild soaps and in a delicate manner.<\/li><li><strong>Protection Against Moisture<\/strong>: Store your cherished handwoven handbag in a dry, protected environment, preferably within the Paoti bag provided in the packaging, to prevent any damage from moisture.<\/li><li><strong>Natural and Gentle Care<\/strong>: Avoid the use of bleaches and harsh detergents that may compromise the integrity and natural beauty of your Wayuu handwoven handbag.<\/li><li><strong>Air Drying<\/strong>: After washing, allow the handwoven handbag to air dry in a shaded area to preserve its artisanal quality and durability.<\/li><\/ol>",
             "page": "care-instructions",
-            "open": true,
+            "open": false,
             "show_in_quickbuy": false
           }
         },
@@ -61,7 +61,7 @@
             "icon": "box",
             "content": "<p>Collapsible tab content<\/p>",
             "page": "packaging",
-            "open": true,
+            "open": false,
             "show_in_quickbuy": false
           }
         },
