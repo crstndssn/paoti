@@ -61,7 +61,53 @@
                   <p class="drawer__heading">{% if cart.items.size == 0 %}{% endif %}{% if cart.items.size != 0 %}{% if cart.total_price >= 20000 %} ¡Felicidades! Tu compra tiene envío gratis 👌{% elsif cart.total_price < 20000 %}¡Sólo te faltan <strong>{{ 20000 | minus: cart.total_price | money }}</strong> para tener envío gratis!{% endif %}{% endif %}</p>
                 </div>
                 <style>
-                  .drawer__shipping{margin:0 -1.5rem;background-color:#7f6fdf;padding:1rem}.drawer__shipping .progress_bar{display:flex;justify-content:center;align-items:center;gap:1rem;font-size:14px;color:#fff;font-weight:500}.drawer__shipping .progress_bar progress::-webkit-progress-bar{background-color:#eee;border-radius:5px}.drawer__shipping .progress_bar progress::-webkit-progress-value{background-color:#8cdf6f!important;height:5px;width:50%;border-radius:5px}.drawer__shipping .progress_bar progress{background-color:#eee;border-radius:5px}.drawer__shipping .progress_bar progress::-moz-progress-bar{background-color:#8cdf6f!important;height:5px;width:50%;border-radius:5px}.drawer__shipping .progress_bar progress{background-color:#eee;border-radius:5px}.drawer__shipping .progress_bar progress{background-color:#8cdf6f;height:5px;width:50%;border-radius:5px}.drawer__shipping .progress_bar_custom{margin-top:5px}
+                  .drawer__shipping {
+                    margin: 0 -1.5rem;
+                    background-color: #7F6FDF;
+                    padding: 1rem;
+                  }
+                  .drawer__shipping .progress_bar {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1rem;
+                    font-size: 14px;
+                    color: #fff;
+                    font-weight: 500;
+                  }
+                  .drawer__shipping .progress_bar progress::-webkit-progress-bar {
+                    background-color: #eeeeee;
+                    border-radius: 5px;
+                  }
+                  .drawer__shipping .progress_bar progress::-webkit-progress-value {
+                    background-color: #8CDF6F !important;
+                    height: 5px;
+                    width: 50%;
+                    border-radius: 5px;
+                  }
+                  .drawer__shipping .progress_bar progress {
+                    background-color: #eee;
+                    border-radius: 5px;
+                  }
+                  .drawer__shipping .progress_bar progress::-moz-progress-bar {
+                    background-color: #8CDF6F !important;
+                    height: 5px;
+                    width: 50%;
+                    border-radius: 5px;
+                  }
+                  .drawer__shipping .progress_bar progress {
+                    background-color: #eee;
+                    border-radius: 5px;
+                  }
+                  .drawer__shipping .progress_bar progress {
+                    background-color: #8CDF6F;
+                    height: 5px;
+                    width: 50%;
+                    border-radius: 5px;
+                  }
+                  .drawer__shipping .progress_bar_custom {
+                    margin-top: 5px;
+                  }
                 </style>
                 
                 {%- if settings.show_free_shipping_bar -%}
