@@ -64,7 +64,11 @@
                             You've got free shipping 👌
                           {% endif %}
                      {% elsif cart.total_price < 20000 %}
-                          You're only {{ 20000 | minus: cart.total_price | money }} away from free shipping
+                          {% if request.locale.iso_code == 'es' %}
+                            Estás solo a {{ 20000 | minus: cart.total_price | money }} de desbloquear el envío gratis
+                          {% else %}
+                            You're only {{ 20000 | minus: cart.total_price | money }} away from free shipping
+                          {% endif %}
                      {% endif %}
                 {% endif %}
                 $0 <progress max="20000" value="{{ cart.total_price }}"></progress> $200
