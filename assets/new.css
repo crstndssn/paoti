@@ -439,3 +439,8 @@ button {
 .rimage-outer-wrapper {
   max-width: auto;
 }
+
+form-embed#app-embed-container-20149 {
+    z-index: 0;
+    position: relative;
+}
