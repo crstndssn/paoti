@@ -304,8 +304,8 @@ button {
 
 @media screen and (max-width: 800px) {
   .overlay-text__rte p {
-    font-size: 20px !important;
-    line-height: 2rem !important;
+    font-size: 34px !important;
+    line-height: 3rem !important;
   }
 }
 
