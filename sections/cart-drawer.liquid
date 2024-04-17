@@ -63,7 +63,16 @@
             <span id="progress-text" style="display: block; margin-top: -15px; text-align: center"></span>
         </div>
     </div>
-    <p class="drawer__heading" style="margin-top: 4px; text-align: center;">{% if cart.items.size == 0 %}{% endif %}{% if cart.items.size != 0 %}{% if cart.total_price >= 20000 %} ¡Felicidades! Tu compra tiene envío gratis 👌{% elsif cart.total_price < 20000 %}¡Sólo te faltan <strong>{{ 20000 | minus: cart.total_price | money }}</strong> para tener envío gratis!{% endif %}{% endif %}</p>
+    <p class="drawer__heading" style="margin-top: 4px; text-align: center;">
+        {% if cart.items.size == 0 %}{% endif %}
+        {% if cart.items.size != 0 %}
+            {% if cart.total_price >= 20000 %}
+                ¡Felicidades! Tu compra tiene envío gratis 👌
+            {% elsif cart.total_price < 20000 %}
+                ¡Sólo te faltan <strong>{{ 20000 | minus: cart.total_price | money }}</strong> para tener envío gratis!
+            {% endif %}
+        {% endif %}
+    </p>
 </div>
 
 <script>
@@ -71,7 +80,7 @@
         updateProgressBar();
 
         // Escucha cambios en el carrito y actualiza la barra de progreso
-        document.addEventListener('cart:updated', function () {
+        document.addEventListener('ajaxCart.afterCartLoad', function () {
             updateProgressBar();
         });
 
@@ -96,6 +105,7 @@
         }
     });
 </script>
+
 
                 
                 {%- if settings.show_free_shipping_bar -%}
