@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "2c50dfda-6943-450e-96f8-7436cc8030ca": {
@@ -7,8 +16,8 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/hero-min.png",
-            "mobile_image": "shopify:\/\/shop_images\/hero-mobile.png",
+            "image": "shopify://shop_images/hero-min.png",
+            "mobile_image": "shopify://shop_images/hero-mobile.png",
             "slide_link": "",
             "subheading": "WELCOME TO OUR LIFESTYLE",
             "title": "",
@@ -16,7 +25,7 @@
             "title_size": 54,
             "title_size_mobile": 54,
             "use_h1": false,
-            "text": "<p>Own Something <em>Special<\/em><\/p>",
+            "text": "<p>Own Something <em>Special</em></p>",
             "enlarge_text": false,
             "button_label_1": "",
             "button_url_1": "",
@@ -56,16 +65,16 @@
         ".overlay--h-center {background-color: rgba(0, 0, 0, 0.3);}"
       ],
       "settings": {
-        "video_shopify": "shopify:\/\/files\/videos\/bannerwebpaoti.mp4",
-        "video_external": "https:\/\/www.youtube.com\/watch?v=G7xQqa7ODKA",
-        "placeholder_image": "shopify:\/\/shop_images\/Header_paoti.webp",
+        "video_shopify": "shopify://files/videos/bannerwebpaoti.mp4",
+        "video_external": "https://www.youtube.com/watch?v=G7xQqa7ODKA",
+        "placeholder_image": "shopify://shop_images/Header_paoti.webp",
         "subheading": "WELCOME TO OUR LIFESTYLE",
         "title": "",
         "heading_max_width": 800,
         "title_size": 54,
         "title_size_mobile": 54,
         "use_h1": false,
-        "text": "<p>Own Something <em>Special<\/em><\/p>",
+        "text": "<p>Own Something <em>Special</em></p>",
         "enlarge_text": true,
         "button_label_1": "",
         "button_url_1": "",
@@ -82,9 +91,9 @@
       "type": "background-video",
       "disabled": true,
       "settings": {
-        "video_shopify": "shopify:\/\/files\/videos\/C0004_6 (1).mp4",
-        "video_external": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "placeholder_image": "shopify:\/\/shop_images\/ConvertOut-Resized-PAOTI0084.jpg",
+        "video_shopify": "shopify://files/videos/C0004_6 (1).mp4",
+        "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "placeholder_image": "shopify://shop_images/ConvertOut-Resized-PAOTI0084.jpg",
         "subheading": "Welcome to our lifestyle",
         "title": "Own Something Special",
         "heading_max_width": 820,
@@ -110,32 +119,32 @@
         "90ee0a94-7f9e-47da-a4e0-c0b48345ddf8": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/handbags-hq.webp",
+            "image": "shopify://shop_images/handbags-hq.webp",
             "name": "Handbags",
-            "link": "shopify:\/\/collections\/handwoven-handbags"
+            "link": "shopify://collections/handwoven-handbags"
           }
         },
         "2bc3c8e1-b24d-4338-837d-aa88d351e1d9": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2.png",
+            "image": "shopify://shop_images/2.png",
             "name": "Straps",
-            "link": "shopify:\/\/collections\/straps"
+            "link": "shopify://collections/straps"
           }
         },
         "eb7fe854-fa6c-41de-ac07-e9a0fcdf737a": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3.png",
+            "image": "shopify://shop_images/3.png",
             "name": "Swimwear",
-            "link": "shopify:\/\/collections\/swimwear"
+            "link": "shopify://collections/swimwear"
           }
         },
         "4d70c96f-5e3f-4940-bb59-a59db1318fff": {
           "type": "item",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/resortwear.png",
+            "image": "shopify://shop_images/resortwear.png",
             "name": "Resortwear",
             "link": ""
           }
@@ -147,8 +156,7 @@
         "eb7fe854-fa6c-41de-ac07-e9a0fcdf737a",
         "4d70c96f-5e3f-4940-bb59-a59db1318fff"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "looks": {
       "type": "looks",
@@ -157,8 +165,8 @@
           "type": "look",
           "settings": {
             "background__color": "#f4f1ea",
-            "look__image": "shopify:\/\/shop_images\/photo_1_2.png",
-            "first__product": "lucho-handwoven-strap-beige-white",
+            "look__image": "shopify://shop_images/photo_1_2.png",
+            "first__product": "jade-handwoven-handbag-green-beige",
             "look__first-range--x": 60,
             "look__first-range--y": 82,
             "second__product": "blaire-handwoven-handbag-brown-coffee-beige",
@@ -204,8 +212,8 @@
         "af06ee7d-de19-413c-a3ce-87e6579181dd"
       ],
       "settings": {
-        "luxury__title": "<p>Unique <em>Luxury<\/em> Handbacks<\/p>",
-        "luxury__image": "shopify:\/\/shop_images\/DSC04315_1.png"
+        "luxury__title": "<p>Unique <em>Luxury</em> Handbacks</p>",
+        "luxury__image": "shopify://shop_images/DSC04315_1.png"
       }
     }
   },
