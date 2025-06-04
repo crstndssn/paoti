@@ -4,20 +4,8 @@ This file can be re-written at any time.
 {% endcomment %}
 
 {% include 'shogun-content-handler' %}
-<!doctype html>
-{%- liquid
-  assign rtl_langs = 'ar,arc,dv,fa,ha,he,khw,ks,ku,ps,ur,yi' | split: ','
-  assign current_lang = localization.language.iso_code | split: '-' | first
-  if rtl_langs contains current_lang
-    assign lang_dir = 'rtl'
-  else
-    assign lang_dir = 'ltr'
-  endif
--%}
-<html lang="{{ request.locale.iso_code }}" dir="{{ lang_dir }}">
-  
-<head>
-  
+<html>
+  <head>
 	<!-- Added by AVADA SEO Suite -->
 	{% include 'avada-seo' %}
 	<!-- /Added by AVADA SEO Suite -->
@@ -187,37 +175,25 @@ This file can be re-written at any time.
     {{ content_for_header }}
 
     {% render 'shogun-head' %}
-  
-</head>
+  </head>
+  <body>
+    {% include 'shogun-content-handler' %}
 
-
-  <meta name="facebook-domain-verification" content="4x07e7u2wrto1n8v6jmqqfa9xoeiqt">
-  
-<body
-    class="
-      template-{{ template | split: '.' | first | handle }}
-      {%- if template.suffix %} template-suffix-{{ template.suffix }}{% endif -%}
-      {%- if settings.swatch_enabled %} swatch-method-{{ settings.swatch_method }} swatch-style-{{ settings.swatch_style }}{% endif -%}
-    "
-    data-cc-animate-timeout="0"
-  >
-  
-  
-  {{ content_for_layout }}
-  
-  <script>
+    
+    
+    {{ content_for_layout }}
+    
+    <script>
         if ('IntersectionObserver' in window) {
           document.body.classList.add('cc-animate-enabled');
         }
       </script>
-  <style type="text/css">
-    body, html {
-      width: 100% !important;
-      background: white !important;
-    }
-  </style>
-  
-</body>
-
+    <style type="text/css">
+      body, html {
+        width: 100% !important;
+        background: white !important;
+      }
+    </style>
+    
+  </body>
 </html>
-
