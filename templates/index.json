@@ -124,13 +124,6 @@
             "link": "shopify://collections/handwoven-handbags"
           }
         },
-        "item_wz89HK": {
-          "type": "item",
-          "settings": {
-            "name": "",
-            "link": ""
-          }
-        },
         "2bc3c8e1-b24d-4338-837d-aa88d351e1d9": {
           "type": "item",
           "settings": {
@@ -159,7 +152,6 @@
       },
       "block_order": [
         "90ee0a94-7f9e-47da-a4e0-c0b48345ddf8",
-        "item_wz89HK",
         "2bc3c8e1-b24d-4338-837d-aa88d351e1d9",
         "eb7fe854-fa6c-41de-ac07-e9a0fcdf737a",
         "4d70c96f-5e3f-4940-bb59-a59db1318fff"
