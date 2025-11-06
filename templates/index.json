@@ -127,8 +127,8 @@
         "2bc3c8e1-b24d-4338-837d-aa88d351e1d9": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/2.png",
-            "name": "Straps",
+            "image": "shopify://shop_images/Photoroom_20251031_054606.png",
+            "name": "Resortwear",
             "link": "shopify://collections/straps"
           }
         },
@@ -165,14 +165,14 @@
           "type": "look",
           "settings": {
             "background__color": "#f4f1ea",
-            "look__image": "shopify://shop_images/photo_1_2.png",
+            "look__image": "shopify://shop_images/Photoroom_20251104_152602.jpg",
             "first__product": "jade-handwoven-handbag-green-beige",
             "look__first-range--x": 60,
             "look__first-range--y": 82,
             "second__product": "blaire-handwoven-handbag-brown-coffee-beige",
             "look__second-range--x": 50,
             "look__second-range--y": 50,
-            "look__url": "",
+            "look__url": "https://youtu.be/_6ICJzHcItQ",
             "look__lookbook": ""
           }
         }
