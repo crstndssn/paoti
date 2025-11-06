@@ -66,7 +66,7 @@
       ],
       "settings": {
         "video_shopify": "shopify://files/videos/bannerwebpaoti.mp4",
-        "video_external": "https://www.youtube.com/watch?v=G7xQqa7ODKA",
+        "video_external": "https://www.youtube.com/watch?v=_6ICJzHcItQ",
         "placeholder_image": "shopify://shop_images/Header_paoti.webp",
         "subheading": "WELCOME TO OUR LIFESTYLE",
         "title": "",
@@ -119,7 +119,7 @@
         "90ee0a94-7f9e-47da-a4e0-c0b48345ddf8": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/handbags-hq.webp",
+            "image": "shopify://shop_images/AND02895.jpg",
             "name": "Handbags",
             "link": "shopify://collections/handwoven-handbags"
           }
