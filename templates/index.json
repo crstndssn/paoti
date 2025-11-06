@@ -127,8 +127,8 @@
         "2bc3c8e1-b24d-4338-837d-aa88d351e1d9": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/Photoroom_20251031_054606.png",
-            "name": "Resortwear",
+            "image": "shopify://shop_images/DSC09398.jpg",
+            "name": "Straps",
             "link": "shopify://collections/straps"
           }
         },
@@ -142,7 +142,6 @@
         },
         "4d70c96f-5e3f-4940-bb59-a59db1318fff": {
           "type": "item",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/resortwear.png",
             "name": "Resortwear",
