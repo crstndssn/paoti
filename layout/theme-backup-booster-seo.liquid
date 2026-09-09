@@ -11,7 +11,6 @@
 -%}
 <html lang="{{ request.locale.iso_code }}" dir="{{ lang_dir }}">
   <head>
-{% include 'booster-seo' %}
 	<!-- Added by AVADA SEO Suite -->
 	{% include 'avada-seo' %}
 	<!-- /Added by AVADA SEO Suite -->
@@ -39,14 +38,14 @@
         a.appendChild(r);
       })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
-    {% comment %}<title>
+    <title>
       {{ page_title }}
       {% if current_tags -%}
         {%- assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}
       {%- endif %}
       {% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}
       {% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
-    </title>{% endcomment %}
+    </title>
     <script
       src="      https://cdn.jsdelivr.net/npm/swiper@10.3.1/swiper-bundle.min.js"
     ></script>
